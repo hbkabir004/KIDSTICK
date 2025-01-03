@@ -9,10 +9,10 @@ This project is designed to help developers easily integrate **endpoints** into 
 
 | 🛠**Feature**        | 🔗**Endpoint** | 📌**Example**                                           |
 | -------------------------- | -------------------- | ------------------------------------------------------------- |
-| **Get Services**     | `/services`        | [View Services](https:/kidstick-server.vercel.app/services)      |
+| **Get Services**     | `/services`        | [View Services](https://kidstick-server.vercel.app/services)      |
 | **Get All Products** | `/products`        | [View All Products](https://kidstick-server.vercel.app/products) |
-| **Get All Events**   | `/events`          | [View Events](https:/kidstick-server.vercel.app/events)          |
-| **Get All Blogs**    | `/blogs`           | [View Blogs](https:/kidstick-server.vercel.app/blogs)            |
+| **Get All Events**   | `/events`          | [View Events](https://kidstick-server.vercel.app/events)          |
+| **Get All Blogs**    | `/blogs`           | [View Blogs](https://kidstick-server.vercel.app/services)            |
 
 ---
 
