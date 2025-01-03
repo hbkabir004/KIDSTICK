@@ -1,0 +1,41 @@
+[
+  {
+    "id": "1",
+    "name": "Join Hiking",
+    "img": "https://i.ibb.co.com/ysXsFG8/hiking.jpg",
+    "description": "Get KidStick's Hiking Package for a guided adventure fostering fun and growth."
+    
+  },
+  {
+    "id": "2",
+    "name": "Join Swimming",
+    "img": "https://i.ibb.co.com/35xVq43/swimming.jpg",
+    "description": "Get KidStick's Swimming Package for a safe, skill-building aquatic experience."
+
+  },
+  {
+    "id": "3",
+    "name": "Join Soccer",
+    "img": "https://i.ibb.co.com/3WKbwm0/soccer.jpg",
+    "description": "Unlock skills and confidence with KidStick's Soccer Package."
+
+  },
+  {
+    "id": "4",
+    "name": "Join Arts",
+    "img": "https://i.ibb.co.com/tCL5q68/arts.jpg",
+    "description": "Inspire creativity with KidStick's Arts Package."
+
+  },
+  {
+    "id": "5",
+    "name": "Join Music",
+    "img": "https://i.ibb.co.com/4g7DKmw/music.jpg",
+    "description": "Foster creativity with KidStick's Music Package"
+
+  }
+  
+]
+
+
+
