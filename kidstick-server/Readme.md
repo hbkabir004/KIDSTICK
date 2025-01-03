@@ -38,7 +38,10 @@ To start working with **Mrittik-Server**, follow these steps:
 ### 🛠 Clone the Repository
 
 ```bash
-git clone https://github.com/hbkabir004/Mrittik-Server.git
+git clone https://github.com/hbkabir004/KIDSTICK.git
+```
+```bash
+cd kidstick-server
 ```
 
 ### ⚙️ Install Dependencies
