@@ -7,12 +7,12 @@ This project is designed to help developers easily integrate **endpoints** into 
 
 ## 🌐 Live API Endpoints
 
-| 🛠**Feature**        | 🔗**Endpoint** | 📌**Example**                                          |
-| -------------------------- | -------------------- | ------------------------------------------------------------ |
-| **Get Services**     | `/services`        | [View Services](https://mrittik-server.vercel.app/category)     |
-| **Get All Products** | `/products`        | [View All Products](https://mrittik-server.vercel.app/products) |
-| **Get All Events**   | `/events`          | [View Events](https://mrittik-server.vercel.app/tags)           |
-| **Get All Blogs**    | `/blogs`           | [View Blogs](https://mrittik-server.vercel.app/brands)          |
+| 🛠**Feature**        | 🔗**Endpoint** | 📌**Example**                                           |
+| -------------------------- | -------------------- | ------------------------------------------------------------- |
+| **Get Services**     | `/services`        | [View Services](https:/kidstick-server.vercel.app/services)      |
+| **Get All Products** | `/products`        | [View All Products](https://kidstick-server.vercel.app/products) |
+| **Get All Events**   | `/events`          | [View Events](https:/kidstick-server.vercel.app/events)          |
+| **Get All Blogs**    | `/blogs`           | [View Blogs](https:/kidstick-server.vercel.app/blogs)            |
 
 ---
 

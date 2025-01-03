@@ -50,16 +50,5 @@ app.get('/blogs', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server running on http://localhost:${port}`);
-}).on('error', (err) => {
-  if (err.code === 'EACCES') {
-    console.error(`Port ${port} requires elevated privileges`);
-    process.exit(1);
-  } else if (err.code === 'EADDRINUSE') {
-    console.error(`Port ${port} is already in use`);
-    process.exit(1);
-  } else {
-    console.error(`Error: ${err}`);
-    process.exit(1);
-  }
+  console.log(`Server is running on http://localhost:${port}`);
 });
