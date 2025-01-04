@@ -12,6 +12,7 @@ const services = JSON.parse(readFileSync(path.resolve('data/services.json')));
 const products = JSON.parse(readFileSync(path.resolve('data/products.json')));
 const events = JSON.parse(readFileSync(path.resolve('data/events.json')));
 const blogs = JSON.parse(readFileSync(path.resolve('data/blogs.json')));
+const testimonials = JSON.parse(readFileSync(path.resolve('data/testimonials.json')));
 
 // Global Middleware
 app.use(cors());
@@ -47,6 +48,13 @@ app.get('/blogs', (req, res) => {
   const filters = req.query;
   const searchedBlogs = filterData(blogs, filters);
   res.send(searchedBlogs);
+});
+
+// Get All Testimonials
+app.get('/testimonials', (req, res) => {
+  const filters = req.query;
+  const searchedTestimonials = filterData(testimonials, filters);
+  res.send(searchedTestimonials);
 });
 
 app.listen(port, () => {

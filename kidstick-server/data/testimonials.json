@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "name": "Danial Russell",
+      "quote": "Kidstick has been transformative, boosting our child's skills and confidence. Highly recommended!",
+      "rating": 5,
+      "imageSrc": "/images/testimonial.jpg",
+      "border": "#49D574",
+      "color": "green"
+    },
+    {
+      "id": 2,
+      "name": "Danial Russell",
+      "quote": "Kidstick has been transformative, boosting our child's skills and confidence. Highly recommended!",
+      "rating": 5,
+      "imageSrc": "/images/testimonial.jpg",
+      "border": "#EA2A3D",
+      "color": "#B24344"
+    },
+    {
+      "id": 3,
+      "name": "Danial Russell",
+      "quote": "Kidstick has been transformative, boosting our child's skills and confidence. Highly recommended!",
+      "rating": 5,
+      "imageSrc": "/images/testimonial.jpg",
+      "border": "#60a5fa",
+      "color": "#366CA8"
+    },
+    {
+      "id": 4,
+      "name": "Danial Russell",
+      "quote": "Kidstick has been transformative, boosting our child's skills and confidence. Highly recommended!",
+      "rating": 5,
+      "imageSrc": "/images/testimonial.jpg",
+      "border": "#EA2A3D",
+      "color": "#B24344"
+    }
+  ]
