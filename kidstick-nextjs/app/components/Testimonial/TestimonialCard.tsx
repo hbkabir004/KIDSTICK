@@ -1,6 +1,5 @@
 import { Star } from 'lucide-react';
 import Image from 'next/image';
-import React from 'react';
 
 interface TestimonialCardProps {
   name: string
@@ -11,7 +10,7 @@ interface TestimonialCardProps {
   border: string
 }
 
-const TestimonialCard: React.FC<TestimonialCardProps> = ({ imageSrc, name, quote, rating, color, border }) => {
+export default function TestimonialCard({ imageSrc, name, quote, rating, color, border }:TestimonialCardProps) {
   return (
     <div style={{ marginRight: "0", borderColor: `${border}`, backgroundColor: `${color}` }} className="pt-16 p-6 border-2 border-dashed rounded-md lg:w-[24rem] md:w-[20rem]">
       <div className="relative bg-white rounded-3xl shadow-lg">
@@ -48,5 +47,3 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ imageSrc, name, quote
     </div>
   );
 };
-
-export default TestimonialCard;

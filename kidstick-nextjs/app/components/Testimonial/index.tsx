@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import TestimonialCard from './TestimonialCard';
 import './index.css';
 
@@ -14,7 +14,7 @@ interface Testimonial {
   color: string;
 }
 
-const TestimonialList: React.FC = () => {
+export default function TestimonialList() {
   const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
   const [Swiper, setSwiper] = useState<any>(null);
 
@@ -92,5 +92,3 @@ const TestimonialList: React.FC = () => {
     </section>
   );
 };
-
-export default TestimonialList;

@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { FaFacebook, FaLinkedin, FaPinterest, FaTwitter } from 'react-icons/fa'
 
-const Footer: React.FC = () => {
+export default function Footer() {
     return (
         <footer className="relative md:pt-[14rem] pt-20 bg-inherit bg-center lg:bg-[url('/images/footer/bg-footer.png')] lg:bg-transparent bg-[#2d4073]">
             <div className="container mx-auto px-20 pb-8">
@@ -168,5 +168,3 @@ const Footer: React.FC = () => {
         </footer>
     )
 }
-
-export default Footer;
