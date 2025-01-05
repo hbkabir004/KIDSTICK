@@ -46,7 +46,16 @@ export default function ContactUs() {
                     />
                 </div>
             </div>
-
+            {/* Background Image */}
+            <div className="absolute right-60 inset-0 flex justify-center items-center">
+                <Image
+                    src="/images/contact-us/design-rotate.png"
+                    alt="Background"
+                    layout="fill"
+                    objectFit="scale-down"
+                    className="opacity-100"
+                />
+            </div>
             <div className="container mx-auto px-4 py-16">
                 <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
                     {/* Images Column */}
@@ -79,6 +88,7 @@ export default function ContactUs() {
                         </div>
                     </div>
 
+
                     {/* Form Column */}
                     <div className="space-y-8 z-50">
                         <div>
@@ -87,7 +97,7 @@ export default function ContactUs() {
                                 Contact Us For Any Support
                             </h1>
                             {/* <div className="absolute w-[15rem] md:w-[18rem] lg:w-[30rem] inset-0 bg-[#FFE3AC] -z-10" style={{ height: '10px', top: '7.5rem', left: '51%' }}></div> */}
-                        
+
                         </div>
 
                         <p className="text-gray-600">
