@@ -13,7 +13,7 @@ interface TestimonialCardProps {
 
 const TestimonialCard: React.FC<TestimonialCardProps> = ({ imageSrc, name, quote, rating, color, border }) => {
   return (
-    <div style={{ marginRight: "0", borderColor: `${border}`, backgroundColor: `${color}` }} className="pt-16 p-6 border-2 border-dashed rounded-md lg:w-[26.5rem] md:w-[20rem]">
+    <div style={{ marginRight: "0", borderColor: `${border}`, backgroundColor: `${color}` }} className="pt-16 p-6 border-2 border-dashed rounded-md lg:w-[24rem] md:w-[20rem]">
       <div className="relative bg-white rounded-3xl shadow-lg">
         <div className="flex flex-col gap-2">
           <div className="absolute -top-8">

@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import { Header } from "./components/Header/Header";
 import TestimonialList from "./components/Testimonial";
 
@@ -6,7 +7,8 @@ export default function Home() {
     <div>
       <Header />
       <br />
-      <TestimonialList/>
+      <TestimonialList />
+      <Footer />
     </div>
   );
 }

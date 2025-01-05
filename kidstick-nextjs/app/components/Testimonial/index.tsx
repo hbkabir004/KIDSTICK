@@ -40,7 +40,7 @@ const TestimonialList: React.FC = () => {
   }
 
   return (
-    <section className="relative lg:px-[15rem] md:px-[7rem] px-[3rem]">
+    <section className="relative lg:px-[15rem] md:px-[5rem] px-[3rem]">
       <div className="absolute left-0 top-0 w-full h-full bg-no-repeat bg-left-top -z-10" style={{ backgroundImage: 'url(/images/testimonials/bg-left.png)' }}></div>
       <div className="absolute right-0 top-0 w-full h-full bg-no-repeat bg-right-bottom" style={{ backgroundImage: 'url(/images/testimonials/bg-right.png)' }}></div>
       <div className="flex flex-wrap justify-center">
@@ -64,18 +64,17 @@ const TestimonialList: React.FC = () => {
         },
         768: {
           slidesPerView: 2,
-          // spaceBetween: 24,
+          // spaceBetween: 10
         },
-        1024: {
+        1300: {
           slidesPerView: 3,
-          // spaceBetween: 24,
         },
         }}
         modules={[Swiper.Autoplay, Swiper.Pagination, Swiper.Navigation]}
-        // autoplay={{
-        //   delay: 2500,
-        //   pauseOnMouseEnter: true,
-        // }}
+        autoplay={{
+          delay: 2500,
+          pauseOnMouseEnter: true,
+        }}
         pagination={{
         clickable: true,
         }}
