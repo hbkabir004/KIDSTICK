@@ -31,7 +31,7 @@ export default function MakeChildrenLife() {
             </p>
 
             <button 
-              className="bg-gradient-to-r from-[#FF6B6B] to-[#FF8E8E] hover:from-[#FF8E8E] hover:to-[#FF6B6B] text-white px-8 py-6 rounded-full text-lg font-semibold transition-all duration-300 hover:scale-105"
+              className="bg-gradient-to-r from-[#FF6B6B] to-[#FF8E8E] hover:from-[#FF8E8E] hover:to-[#FF6B6B] text-white px-6 py-4 rounded-full text-lg font-semibold transition-all duration-300 hover:scale-105"
             >
               Join Today
             </button>
