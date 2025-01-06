@@ -2,12 +2,12 @@ import { Star } from 'lucide-react';
 import Image from 'next/image';
 
 interface TestimonialCardProps {
-  name: string
-  quote: string
-  rating: number
-  imageSrc: string
-  color: string
-  border: string
+  readonly name: string
+  readonly quote: string
+  readonly rating: number
+  readonly imageSrc: string
+  readonly color: string
+  readonly border: string
 }
 
 export default function TestimonialCard({ imageSrc, name, quote, rating, color, border }:TestimonialCardProps) {
