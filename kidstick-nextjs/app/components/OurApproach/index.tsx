@@ -14,7 +14,7 @@ export default function OurApproach() {
           aria-hidden="true"
         />
       </div>
-      <div className="absolute top-20 left-[40%]">
+      <div className="absolute top-12 left-[40%]">
         <Image
           src="/images/our-approach/green-star.png"
           alt=""
@@ -29,16 +29,26 @@ export default function OurApproach() {
       {/* Main Content */}
       <div className="container mx-auto px-4 py-12 md:py-20">
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="grid md:grid-cols-2 gap-8 items-center md:px-0 px-6">
             {/* Image Grid */}
             <div className="relative">
               {/* Background Images */}
-              <div className="absolute -top-20 left-0 w-[5.5rem] h-[5.5rem]">
+              <div className="absolute -top-[6.3rem] -left-5 w-[5.5rem] h-[5.5rem]">
                 <Image
                   src="/images/our-approach/top-left.png"
                   alt=""
                   width={100}
                   height={100}
+                  className="w-full h-full"
+                  aria-hidden="true"
+                />
+              </div>
+              <div className="absolute bottom-4 right-5 w-full h-full">
+                <Image
+                  src="/images/our-approach/bg-group-img.png"
+                  alt=""
+                  width={300}
+                  height={300}
                   className="w-full h-full"
                   aria-hidden="true"
                 />
@@ -54,8 +64,8 @@ export default function OurApproach() {
                 />
               </div>
 
-              <div className="grid grid-cols-2 gap-0 p-4 bg-white rounded-3xl shadow-lg">
-                <div className="relative aspect-[4/3]">
+              <div className="grid grid-cols-2 gap-0 bg-white rounded-3xl shadow-lg">
+                <div className="relative aspect-[1.5]">
                   <Image
                     src="/images/our-approach/image_4.jpg"
                     alt="Children engaged in outdoor learning activities"
@@ -63,7 +73,7 @@ export default function OurApproach() {
                     className="object-cover border-[#49D574] border-2 rounded-tl-2xl"
                   />
                 </div>
-                <div className="relative aspect-[4/3]">
+                <div className="relative aspect-[1.5]">
                   <Image
                     src="/images/our-approach/image_5.jpg"
                     alt="Children participating in group activities"
@@ -71,7 +81,7 @@ export default function OurApproach() {
                     className="object-cover border-[#FFA766] border-2 rounded-tr-2xl"
                   />
                 </div>
-                <div className="relative aspect-[4/3]">
+                <div className="relative aspect-[1.5]">
                   <Image
                     src="/images/our-approach/image_6.jpg"
                     alt="Children playing sports"
@@ -79,7 +89,7 @@ export default function OurApproach() {
                     className="object-cover border-[#5BA8FD] border-2 rounded-bl-2xl"
                   />
                 </div>
-                <div className="relative aspect-[4/3]">
+                <div className="relative aspect-[1.5]">
                   <Image
                     src="/images/our-approach/image_7.jpg"
                     alt="Children in an art class"
@@ -91,7 +101,7 @@ export default function OurApproach() {
             </div>
 
             {/* Text Content */}
-            <div className="space-y-6 md:px-0 px-6">
+            <div className="space-y-6">
               <div>
                 <h2 className="text-lg text-gray-600 mb-2">Our Approach</h2>
                 <h1 className="text-4xl md:text-5xl font-bold text-[#1a1a4b] mb-6">
