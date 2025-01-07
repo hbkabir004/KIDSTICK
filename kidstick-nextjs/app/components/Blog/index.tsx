@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import BlogCard from "./BlogCard";
 
 interface BlogPost {
@@ -11,7 +11,7 @@ interface BlogPost {
   img: string;
 }
 
-const BlogList: React.FC = () => {
+export default function BlogList() {
   const [blogPosts, setBlogPosts] = useState<BlogPost[]>([]);
 
   useEffect(() => {
@@ -63,5 +63,3 @@ const BlogList: React.FC = () => {
     </section>
   );
 };
-
-export default BlogList;

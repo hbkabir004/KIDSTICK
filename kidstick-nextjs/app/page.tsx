@@ -12,6 +12,7 @@ import MakeChildrenLife from "./components/MakeChildrenLife";
 import PricingSection from "./components/Offer";
 import OurApproach from "./components/OurApproach";
 import StatsBanner from "./components/StatBanner";
+import Teachers from "./components/Teacher";
 import TestimonialList from "./components/Testimonial";
 
 export default function Home() {
@@ -28,6 +29,7 @@ export default function Home() {
       <JoinKidstick/>
       <TestimonialList />
       <FAQSection/>
+      <Teachers/>
       <MakeChildrenLife/>
       <PricingSection/>
       <GallerySection/>
