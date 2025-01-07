@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { ContactInfo } from './ContactInfo';
 import { NavLink } from './NavLink';
 import { SocialIcon } from './SocialIcon';
@@ -26,7 +25,7 @@ const contactInfo = [
   { iconSrc: 'https://cdn.builder.io/api/v1/image/assets/6f7f910cbdf84b78b772e5e78e5609e6/eba5316da97723dbba1ce27d541dd338aff3a6dc0d253510233f41286dae46fe?apiKey=8da3fd6b121a4ce09e18e7d9dae826f0&', label: 'Call us', value: '+8801404049797' }
 ];
 
-export const Header: React.FC = () => {
+export default function Header() {
   return (
     <div className="flex flex-col rounded-none">
       <div className="flex flex-col justify-center items-center px-20 py-2.5 w-full border-b border-solid bg-cyan-400 bg-opacity-50 border-b-yellow-500 max-md:px-5 max-md:max-w-full">

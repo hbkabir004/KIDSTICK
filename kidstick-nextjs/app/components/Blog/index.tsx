@@ -25,7 +25,7 @@ const BlogList: React.FC = () => {
   }, []);
 
   return (
-    <section className="relative" style={{ backgroundColor: "#F1EEFC" }}>
+    <section className="relative overflow-hidden lg:mr-0 mr-5" style={{ backgroundColor: "#F1EEFC" }}>
       {/* Background Images */}
       <div
         className="absolute top-0 left-0 w-full h-full bg-no-repeat"
@@ -51,7 +51,7 @@ const BlogList: React.FC = () => {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {blogPosts.map((post) => (
             <BlogCard
               key={post.id}

@@ -1,0 +1,55 @@
+.event-swiper,
+.swiper {
+  padding-bottom: 20px;
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: relative;
+    z-index: 999;
+
+    &:after {
+      font-size: 30px;
+      font-weight: 700;
+    }
+  }
+
+  .swiper-button-prev {
+    top: 45px;
+    left: 42%;
+  }
+
+  .swiper-button-next {
+    top: 23px;
+    left: 55%;
+  }
+
+  .swiper-pagination {
+    margin-top: 120px;
+
+    .swiper-pagination-bullet {
+      background: #FF6B6D;
+      width: 12px;
+      height: 12px;
+      opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: #FF6B6D;
+      width: 12px;
+      height: 12px;
+      position: relative;
+      opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active::before {
+      content: '';
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      border: 2px dashed #FF6B6D;
+      border-radius: 50%;
+      left: -6px;
+      top: -6px;
+    }
+  }
+}

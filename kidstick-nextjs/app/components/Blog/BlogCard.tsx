@@ -13,11 +13,11 @@ export default function BlogCard({
   img
 }: BlogCardProps) {
   return (
-    <div className="bg-white max-w-3xl rounded-[1.5rem] border-2 border-dashed border-[#FF6B6D] hover:shadow-lg transition-shadow duration-300">
+    <div className="bg-white max-w-3xl rounded-[1.5rem] border-2 border-dashed border-[#FF6B6D] hover:shadow-2xl transition-shadow duration-300">
       <Link href="#" className="flex flex-col md:flex-row gap-4">
         {/* Image Container */}
         <div className="relative w-full md:w-[12.5rem] h-[15.625rem] flex-shrink-0">
-          <div className="relative h-full rounded-t-[24px] md:rounded-l-[24px] overflow-hidden">
+          <div className="relative h-full rounded-tl-[24px] md:rounded-l-[24px] overflow-hidden">
             <Image
               src={img}
               alt={title}
