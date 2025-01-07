@@ -4,6 +4,7 @@ import ContactUs from "./components/ContactUs";
 import EventSection from "./components/Event";
 import FAQSection from "./components/FAQ";
 import Footer from "./components/Footer";
+import GallerySection from "./components/Gallery";
 import Header from "./components/Header/Header";
 import ImageCollage from "./components/ImageCollage";
 import JoinKidstick from "./components/JoinKidstick";
@@ -29,6 +30,7 @@ export default function Home() {
       <FAQSection/>
       <MakeChildrenLife/>
       <PricingSection/>
+      <GallerySection/>
       <BlogSection/>
       <ContactUs/>
       <Footer />
