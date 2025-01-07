@@ -4,24 +4,22 @@ import Link from 'next/link'
 interface BlogCardProps {
   title: string
   description: string
-  imageUrl: string
-  href: string
+  img: string
 }
 
 export default function BlogCard({
-  title = "The Ultimate Guide To Creating A positive Adventure",
-  description = "The Ultimate Guide to Creating a Positive Adventure by KidStick provides practical strategies to inspire confidence, growth, and joy in every journey...",
-  imageUrl = "/placeholder.svg?height=400&width=400",
-  href = "#"
+  title,
+  description,
+  img
 }: BlogCardProps) {
   return (
-    <div className="max-w-3xl rounded-[32px] border border-dashed border-gray-200 p-3 hover:shadow-lg transition-shadow duration-300">
-      <Link href={href} className="flex gap-4">
+    <div className="bg-white max-w-3xl rounded-[1.5rem] border-2 border-dashed border-[#FF6B6D] hover:shadow-lg transition-shadow duration-300">
+      <Link href="#" className="flex flex-col md:flex-row gap-4">
         {/* Image Container */}
-        <div className="relative w-[180px] h-[180px] flex-shrink-0">
-          <div className="relative h-full rounded-l-[24px] overflow-hidden">
+        <div className="relative w-full md:w-[12.5rem] h-[15.625rem] flex-shrink-0">
+          <div className="relative h-full rounded-t-[24px] md:rounded-l-[24px] overflow-hidden">
             <Image
-              src={imageUrl}
+              src={img}
               alt={title}
               fill
               className="object-cover"
@@ -37,7 +35,7 @@ export default function BlogCard({
         </div>
 
         {/* Content */}
-        <div className="flex-1 py-3 pr-3 space-y-3">
+        <div className="flex-1 py-5 px-3 space-y-3">
           <h3 className="text-[#1A1A1A] text-lg font-bold leading-tight">
             {title}
           </h3>

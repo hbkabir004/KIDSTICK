@@ -1,3 +1,4 @@
+import BlogSection from "./components/Blog";
 import ChoseForKids from "./components/ChoseForKids";
 import ContactUs from "./components/ContactUs";
 import FAQSection from "./components/FAQ";
@@ -24,6 +25,7 @@ export default function Home() {
       <JoinKidstick/>
       <FAQSection/>
       <MakeChildrenLife/>
+      <BlogSection/>
       <ContactUs/>
       <Footer />
     </div>
