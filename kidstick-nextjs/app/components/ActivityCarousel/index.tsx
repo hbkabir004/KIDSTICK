@@ -1,114 +1,152 @@
 'use client'
 
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { cn } from "@/lib/utils"
 import { ChevronLeft, ChevronRight } from 'lucide-react'
-import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
-import { Autoplay, Navigation, Pagination } from 'swiper/modules'
+import { useRef } from 'react'
+import type { Swiper as SwiperType } from 'swiper'
+import { Navigation } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import './index.css'
 
 interface Activity {
+  id: number
   title: string
   image: string
-  color: string
+  borderColor: string
+  bgColor:string
 }
 
 const activities: Activity[] = [
   {
-    title: "Happy Adventure",
-    image: "/placeholder.svg?height=400&width=600",
-    color: "border-green-200 bg-green-50",
+    id: 1,
+    title: 'Happy Adventure',
+    image: '/images/activities/01.jpg',
+    borderColor: 'border-green-200',
+    bgColor: 'bg-green-100',
   },
   {
-    title: "Experience Couch",
-    image: "/placeholder.svg?height=400&width=600",
-    color: "border-orange-200 bg-orange-50",
+    id: 2,
+    title: 'Experience Coach',
+    image: '/images/activities/02.jpg',
+    borderColor: 'border-yellow-200',
+    bgColor: 'bg-yellow-100',
   },
   {
-    title: "Soccer Club",
-    image: "/placeholder.svg?height=400&width=600",
-    color: "border-blue-200 bg-blue-50",
+    id: 3,
+    title: 'Soccer Club',
+    image: '/images/activities/03.jpg',
+    borderColor: 'border-blue-200',
+    bgColor: 'bg-blue-100',
   },
   {
-    title: "Arts & Craft",
-    image: "/placeholder.svg?height=400&width=600",
-    color: "border-pink-200 bg-pink-50",
+    id: 4,
+    title: 'Arts & Craft',
+    image: '/images/activities/04.jpg',
+    borderColor: 'border-pink-200',
+    bgColor: 'bg-pink-100',
+  },
+  {
+    id: 5,
+    title: 'Happy Adventure',
+    image: '/images/activities/01.jpg',
+    borderColor: 'border-green-200',
+    bgColor: 'bg-green-100',
+  },
+  {
+    id: 6,
+    title: 'Experience Coach',
+    image: '/images/activities/02.jpg',
+    borderColor: 'border-yellow-200',
+    bgColor: 'bg-yellow-100',
+  },
+  {
+    id: 7,
+    title: 'Soccer Club',
+    image: '/images/activities/03.jpg',
+    borderColor: 'border-blue-200',
+    bgColor: 'bg-blue-100',
+  },
+  {
+    id: 8,
+    title: 'Arts & Craft',
+    image: '/images/activities/04.jpg',
+    borderColor: 'border-pink-200',
+    bgColor: 'bg-pink-100',
   },
 ]
 
-export function ActivityCarousel() {
+export default function ActivitiesCarousel() {
+  const swiperRef = useRef<SwiperType>()
+
   return (
-    <div className="relative w-full px-4 py-8">
-      <Swiper
-        modules={[Navigation, Pagination, Autoplay]}
-        spaceBetween={16}
-        slidesPerView={1}
+    <section className='bg-[#FFFDF5] relative px-6 lg:px-0'>
+      {/* Background Images */}
+      <div className="absolute left-20 top-0 transform translate-y-1/2 h-[11rem] w-1/4 bg-no-repeat bg-left bg-contain" style={{ backgroundImage: "url('/images/activities/bg-circle.png')" }}></div>
+      <div className="absolute right-0 bottom-0 h-[10rem] w-1/4 bg-no-repeat bg-right bg-contain" style={{ backgroundImage: "url('/images/activities/banner-shape.png')" }}></div>
+
+      <div className="relative w-full max-w-7xl mx-auto p-14 overflow-hidden">
+      {/* Carousel */}
+      <div className="relative">
+        <Swiper
+        modules={[Navigation]}
+        onBeforeInit={(swiper) => {
+          swiperRef.current = swiper
+        }}
         breakpoints={{
-          640: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
+          640: {
+          slidesPerView: 1,
+          spaceBetween: 5,
+          },
+          768: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+          },
+          1024: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+          },
+          1280: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+          },
         }}
-        loop={true}
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: false,
-        }}
-        navigation={{
-          prevEl: '.swiper-button-prev',
-          nextEl: '.swiper-button-next',
-        }}
-        pagination={{
-          el: '.swiper-pagination',
-          clickable: true,
-          bulletActiveClass: 'swiper-pagination-bullet-active',
-        }}
-        className="w-full"
-      >
-        {activities.map((activity, index) => (
-          <SwiperSlide key={index}>
-            <Card className={cn(
-              "border-2 transition-all duration-300 hover:shadow-lg",
-              activity.color
-            )}>
-              <CardContent className="p-4">
-                <div className="aspect-[3/2] overflow-hidden rounded-lg">
-                  <img
-                    src={activity.image}
-                    alt={activity.title}
-                    className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
-                  />
-                </div>
-                <h3 className="mt-4 text-xl font-semibold text-center">
-                  {activity.title}
-                </h3>
-              </CardContent>
-            </Card>
+        className="w-full py-8"
+        >
+        {activities.map((activity) => (
+          <SwiperSlide key={activity.id}>
+          <div className={`rounded-lg overflow-hidden border-4 border-dashed ${activity.borderColor} transition-transform hover:scale-105`}>
+            <div className="relative aspect-[4/3]">
+            <img
+              src={activity.image}
+              alt={activity.title}
+              className="w-full h-full object-cover"
+            />
+            </div>
+            <div className={`p-4 text-center ${activity.bgColor}`}>
+            <h3 className="text-xl font-semibold text-gray-900">
+              {activity.title}
+            </h3>
+            </div>
+          </div>
           </SwiperSlide>
         ))}
-      </Swiper>
+        </Swiper>
 
-      <Button
-        variant="secondary"
-        size="icon"
-        className="swiper-button-prev absolute left-2 top-1/2 -translate-y-1/2 h-8 w-8 rounded-full bg-white/80 backdrop-blur-sm z-10"
-        aria-label="Previous slide"
-      >
-        <ChevronLeft className="h-4 w-4" />
-      </Button>
-
-      <Button
-        variant="secondary"
-        size="icon"
-        className="swiper-button-next absolute right-2 top-1/2 -translate-y-1/2 h-8 w-8 rounded-full bg-white/80 backdrop-blur-sm z-10"
-        aria-label="Next slide"
-      >
-        <ChevronRight className="h-4 w-4" />
-      </Button>
-
-      <div className="swiper-pagination absolute bottom-0 left-1/2 -translate-x-1/2 flex gap-2" />
-    </div>
+        {/* Custom Navigation Buttons */}
+        <button
+        onClick={() => swiperRef.current?.slidePrev()}
+        className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 z-10 flex items-center justify-center w-10 h-10 rounded-lg bg-red-400 text-white shadow-lg hover:bg-red-500 transition-colors focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
+        >
+        <ChevronLeft className="w-6 h-6" />
+        </button>
+        <button
+        onClick={() => swiperRef.current?.slideNext()}
+        className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 z-10 flex items-center justify-center w-10 h-10 rounded-lg bg-red-400 text-white shadow-lg hover:bg-red-500 transition-colors focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
+        >
+        <ChevronRight className="w-6 h-6" />
+        </button>
+      </div>
+      </div>
+    </section>
   )
 }
 

@@ -1,3 +1,4 @@
+import ActivitiesCarousel from "./components/ActivityCarousel";
 import BlogSection from "./components/Blog";
 import ChoseForKids from "./components/ChoseForKids";
 import ContactUs from "./components/ContactUs";
@@ -20,7 +21,7 @@ export default function Home() {
     <div>
       <Header />
       <br />
-      {/* <ActivityCarousel/> */}
+      <ActivitiesCarousel/>
       <ImageCollage/>
       <OurApproach/>
       <StatsBanner/>
