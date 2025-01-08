@@ -40,16 +40,14 @@ const faqs: FAQItem[] = [
                         <img
                             src="/images/faq/01.jpg"
                             alt="Group of children hiking outdoors"
-                            fill
-                            className="object-cover"
+                            className="object-cover w-full h-full"
                         />
                     </div>
                     <div className="relative aspect-[2] rounded-lg overflow-hidden">
                         <img
                             src="/images/faq/02.jpg"
                             alt="Children in a field of flowers"
-                            fill
-                            className="object-cover"
+                            className="object-cover w-full h-full"
                         />
                     </div>
                 </div>

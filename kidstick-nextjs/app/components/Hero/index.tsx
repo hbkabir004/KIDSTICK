@@ -104,7 +104,6 @@ export default function Hero() {
                                 alt="Happy children with raised hands"
                                 width={1000}
                                 height={1000}
-                                priority
                                 className="object-contain"
                             />
                         </div>

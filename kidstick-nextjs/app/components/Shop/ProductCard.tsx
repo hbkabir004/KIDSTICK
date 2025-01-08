@@ -30,8 +30,7 @@ export function ProductCard({ product }: ProductCardProps) {
         <img
           src={product.image}
           alt={product.title}
-          fill
-          className="object-cover rounded-lg"
+          className="object-cover rounded-lg w-full h-full"
         />
 
         {/* Action Buttons */}

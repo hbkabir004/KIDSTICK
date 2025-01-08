@@ -68,32 +68,28 @@ export default function OurApproach() {
                   <img
                     src="/images/our-approach/image_4.jpg"
                     alt="Children engaged in outdoor learning activities"
-                    fill
-                    className="object-cover border-[#49D574] border-2 rounded-tl-2xl"
+                    className="object-cover border-[#49D574] border-2 rounded-tl-2xl w-full h-full"
                   />
                 </div>
                 <div className="relative aspect-[1.5]">
                   <img
                     src="/images/our-approach/image_5.jpg"
                     alt="Children participating in group activities"
-                    fill
-                    className="object-cover border-[#FFA766] border-2 rounded-tr-2xl"
+                    className="object-cover border-[#FFA766] border-2 rounded-tr-2xl w-full h-full"
                   />
                 </div>
                 <div className="relative aspect-[1.5]">
                   <img
                     src="/images/our-approach/image_6.jpg"
                     alt="Children playing sports"
-                    fill
-                    className="object-cover border-[#5BA8FD] border-2 rounded-bl-2xl"
+                    className="object-cover border-[#5BA8FD] border-2 rounded-bl-2xl w-full h-full"
                   />
                 </div>
                 <div className="relative aspect-[1.5]">
                   <img
                     src="/images/our-approach/image_7.jpg"
                     alt="Children in an art class"
-                    fill
-                    className="object-cover border-[#FF98C9] border-2 rounded-br-2xl"
+                    className="object-cover border-[#FF98C9] border-2 rounded-br-2xl w-full h-full"
                   />
                 </div>
               </div>
