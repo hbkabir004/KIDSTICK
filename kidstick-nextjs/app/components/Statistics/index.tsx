@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { StatCounter } from './StatCounter'
 
 export default function StatsSection() {
@@ -7,7 +6,7 @@ export default function StatsSection() {
 
       {/* Decorative elements */}
       <div className="absolute left-4 top-16 w-16 animate-bounce md:w-20">
-        <Image
+        <img
           src="/images/stats/octopus.png"
           alt=""
           width={300}
@@ -17,7 +16,7 @@ export default function StatsSection() {
         />
       </div>
       <div className="absolute right-[30%] top-5 w-16 animate-bounce md:w-20">
-        <Image
+        <img
           src="/images/stats/fish.png"
           alt=""
           width={80}
@@ -27,7 +26,7 @@ export default function StatsSection() {
         />
       </div>
       <div className="absolute -bottom-4 right-8 w-8 animate-bounce md:w-16">
-        <Image
+        <img
           src="/images/stats/ameba.png"
           alt=""
           width={80}

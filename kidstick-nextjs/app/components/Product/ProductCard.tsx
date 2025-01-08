@@ -1,7 +1,6 @@
 'use client'
 
 import { Eye, Heart, Share2, Star } from 'lucide-react'
-import Image from 'next/image'
 import { useState } from 'react'
 
 interface ProductCardProps {
@@ -39,7 +38,7 @@ export default function ProductCard02({
     <div className="max-w-[280px] rounded-2xl border border-dashed border-gray-200 p-3">
       {/* Image Section */}
       <div className="relative rounded-xl overflow-hidden mb-3">
-        <Image
+        <img
           src={imageUrl}
           alt={title}
           width={280}

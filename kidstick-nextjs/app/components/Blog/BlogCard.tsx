@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 
 interface BlogCardProps {
@@ -18,7 +17,7 @@ export default function BlogCard({
         {/* Image Container */}
         <div className="relative w-full md:w-[12.5rem] h-[15.625rem] flex-shrink-0">
           <div className="relative h-full rounded-tl-[24px] md:rounded-l-[24px] overflow-hidden">
-            <Image
+            <img
               src={img}
               alt={title}
               fill

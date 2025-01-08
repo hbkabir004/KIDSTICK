@@ -1,7 +1,6 @@
 'use client'
 
 import { Eye, Heart, Lock, Star } from 'lucide-react'
-import Image from 'next/image'
 import { useState } from 'react'
 import { Product } from '../../types/types'
 
@@ -28,7 +27,7 @@ export function ProductCard({ product }: ProductCardProps) {
         </div>
       )}
       <div className="relative aspect-square mb-4 h-44 w-full">
-        <Image
+        <img
           src={product.image}
           alt={product.title}
           fill

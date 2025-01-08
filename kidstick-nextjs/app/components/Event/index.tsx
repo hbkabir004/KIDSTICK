@@ -3,7 +3,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { Event } from '@/app/types/types';
-import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { Pagination } from 'swiper/modules';
 import Heading from '../common/Heading';
@@ -68,7 +67,7 @@ export default function EventSection() {
 
                 {/* Decorative Badge */}
                 <div className="absolute -right-32 bottom-8 w-28 h-28">
-                    <Image
+                    <img
                         src="/images/badge.png"
                         alt="Decorative badge"
                         className="w-full h-full"

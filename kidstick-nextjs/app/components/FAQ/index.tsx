@@ -1,7 +1,6 @@
 'use client'
 
 import { Phone, User } from 'lucide-react'
-import Image from 'next/image'
 import Heading from '../common/Heading'
 import FAQAccordion from './FaqAccordion'
 
@@ -29,7 +28,7 @@ export default function FAQSection() {
             {/* Support Card */}
             <div className="bg-[#7CD5F2] rounded-3xl p-4 border-2 border-dashed border-black/60">
               <div className="rounded-2xl overflow-hidden mb-4">
-                <Image
+                <img
                   src="/images/faq/support.jpg"
                   alt="Support representative"
                   width={400}
@@ -64,14 +63,14 @@ export default function FAQSection() {
                 Download the KidStick app for schedules, tracking, and updates
               </p>
               <div className="flex flex-row justify-center gap-4">
-                <Image
+                <img
                   src="/images/faq/playstore.png"
                   alt="Get it on Google Play"
                   width={135}
                   height={40}
                   className="h-10"
                 />
-                <Image
+                <img
                   src="/images/faq/app-store.png"
                   alt="Download on the App Store"
                   width={135}

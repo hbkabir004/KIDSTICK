@@ -1,4 +1,3 @@
-import Image from "next/image";
 import OfferList from "./OfferList";
 
 
@@ -9,21 +8,21 @@ export default function SilverCard() {
                 <div className="relative rounded-tb-3xl p-6 pb-8 overflow-hidden flex flex-col items-center justify-center">
 
                     {/* Star icons */}
-                    <Image
+                    <img
                         src="/images/offer/orange-star.png"
                         alt="Star"
                         width={40}
                         height={40}
                         className="absolute top-8 left-4"
                     />
-                    <Image
+                    <img
                         src="/images/offer/orange-star.png"
                         alt="Star"
                         width={40}
                         height={40}
                         className="absolute top-20 right-4"
                     />
-                    <Image
+                    <img
                         src="/images/offer/orange-star.png"
                         alt="Star"
                         width={40}
@@ -32,7 +31,7 @@ export default function SilverCard() {
                     />
 
                     {/* Award icon */}
-                    <Image
+                    <img
                         src="/images/offer/star-badge.png"
                         alt="Award"
                         width={68}

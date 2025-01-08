@@ -1,7 +1,6 @@
 "use client"
 
 import { Service } from '@/app/types/types';
-import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import Heading from '../common/Heading';
 import { ServiceCard } from './ServiceCard';
@@ -27,15 +26,8 @@ export default function Services() {
       <div className="relative w-full max-w-7xl mx-auto px-4 py-12 overflow-hidden">
         {/* Background Decorative Elements */}
         <div className="absolute left-0 top-1/2 -translate-y-1/2 w-64 h-64 opacity-5">
-          <Image
+          <img
             src="/images/services/bg-services.png"
-            alt="Decorative backpack"
-            className="w-full h-full object-contain"
-          />
-        </div>
-        <div className="absolute right-0 bottom-0 w-64 h-64 opacity-5">
-          <Image
-            src="/placeholder.svg?height=256&width=256"
             alt="Decorative backpack"
             className="w-full h-full object-contain"
           />

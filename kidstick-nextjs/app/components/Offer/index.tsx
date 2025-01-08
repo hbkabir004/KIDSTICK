@@ -1,6 +1,5 @@
 "use client"
 
-import Image from 'next/image'
 import Heading from '../common/Heading'
 import GoldCard from './GoldCard'
 import PlatinumCard from './PlatinumCard'
@@ -27,7 +26,7 @@ export default function PricingSection() {
             <PlatinumCard/>
         </div>
 
-        <Image
+        <img
           src="/images/offer/rubiks_cube.png"
           alt="3D Cube"
           width={300}
@@ -37,7 +36,7 @@ export default function PricingSection() {
       </div>
 
 
-      <Image
+      <img
         src="/images/offer/sunflower.png"
         alt="Flower Character"
         width={200}

@@ -1,11 +1,10 @@
-import Image from "next/image";
 
 export default function OfferList() {
     return (
         <div className="relative bg-[#FBF1E3] rounded-b-3xl p-6 shadow-lg flex flex-col items-center justify-center">
             <ul className="space-y-3 mb-8 mt-6">
                 <li className="flex items-center text-md">
-                    <Image
+                    <img
                         src="/images/offer/bullet.png"
                         height={15}
                         width={15}
@@ -15,7 +14,7 @@ export default function OfferList() {
                     Hiking Service
                 </li>
                 <li className="flex items-center text-md">
-                    <Image
+                    <img
                         src="/images/offer/bullet.png"
                         height={15}
                         width={15}
@@ -25,7 +24,7 @@ export default function OfferList() {
                     Swimming Service
                 </li>
                 <li className="flex items-center text-md">
-                    <Image
+                    <img
                         src="/images/offer/bullet.png"
                         height={15}
                         width={15}
@@ -35,7 +34,7 @@ export default function OfferList() {
                     Kayaking Service
                 </li>
                 <li className="flex items-center text-md">
-                    <Image
+                    <img
                         src="/images/offer/bullet.png"
                         height={15}
                         width={15}
@@ -48,7 +47,7 @@ export default function OfferList() {
 
             {/* Dotted pattern */}
             <div className="absolute bottom-4 left-4 w-16 h-16">
-                <Image
+                <img
                     src="/images/offer/dotted-banner.png"
                     alt="Award"
                     width={68}

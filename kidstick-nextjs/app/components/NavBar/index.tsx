@@ -1,7 +1,6 @@
 'use client'
 
 import { ChevronDown, Heart, Mail, Menu, Phone, Plus, Search, ShoppingBag, User } from 'lucide-react'
-import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
 import { FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa'
@@ -61,7 +60,7 @@ export default function NavBar() {
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
             <div className="flex items-center">
-              <Image
+              <img
                 src="/images/logo.png"
                 alt='Website Logo'
                 height={100}

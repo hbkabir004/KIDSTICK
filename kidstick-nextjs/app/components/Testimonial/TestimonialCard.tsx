@@ -1,5 +1,4 @@
 import { Star } from 'lucide-react';
-import Image from 'next/image';
 
 interface TestimonialCardProps {
   readonly name: string
@@ -17,7 +16,7 @@ export default function TestimonialCard({ imageSrc, name, quote, rating, color, 
         <div className="flex flex-col gap-2">
           <div className="absolute -top-8">
             <div style={{ borderColor: `${color}` }} className="rounded-full border-8 overflow-hidden lg:w-[5.6875rem] lg:h-[5.6875rem] md:w-[4.6875rem] md:h-[4.6875rem] w-[4rem] h-[4rem]">
-              <Image
+              <img
               style={{ borderColor: `${border}` }}
               src={imageSrc}
               alt={`${name}'s testimonial`}

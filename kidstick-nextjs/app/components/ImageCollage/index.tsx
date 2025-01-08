@@ -1,4 +1,3 @@
-import Image from "next/image"
 
 export default function ImageCollage() {
     const activities = [
@@ -36,7 +35,7 @@ export default function ImageCollage() {
             key={index}
             className={`relative aspect-[3/4] ${activity.bgColor} overflow-hidden group`}
           >
-            <Image
+            <img
               src={activity.image}
               alt={activity.alt}
               className="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-50"

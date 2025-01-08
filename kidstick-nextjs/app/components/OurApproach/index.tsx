@@ -1,11 +1,10 @@
-import Image from 'next/image'
 
 export default function OurApproach() {
   return (
     <section className="md:bg-transparent bg-[#FFE6E6] relative pt-10 bg-cover bg-center" style={{ backgroundImage: "url('/images/our-approach/bg-approach.png')" }}>
       {/* Decorative Elements */}
       <div className="absolute top-10 right-[20%]">
-        <Image
+        <img
           src="/images/our-approach/orange-star.png"
           alt=""
           width={40}
@@ -15,7 +14,7 @@ export default function OurApproach() {
         />
       </div>
       <div className="absolute top-12 left-[40%]">
-        <Image
+        <img
           src="/images/our-approach/green-star.png"
           alt=""
           width={40}
@@ -34,7 +33,7 @@ export default function OurApproach() {
             <div className="relative">
               {/* Background Images */}
               <div className="absolute -top-[6.3rem] -left-5 w-[5.5rem] h-[5.5rem]">
-                <Image
+                <img
                   src="/images/our-approach/top-left.png"
                   alt=""
                   width={100}
@@ -44,7 +43,7 @@ export default function OurApproach() {
                 />
               </div>
               <div className="absolute bottom-4 right-5 w-full h-full">
-                <Image
+                <img
                   src="/images/our-approach/bg-group-img.png"
                   alt=""
                   width={300}
@@ -54,7 +53,7 @@ export default function OurApproach() {
                 />
               </div>
               <div className="absolute -top-36 -right-44 w-[17rem] h-[12rem] md:block hidden">
-                <Image
+                <img
                   src="/images/our-approach/top-right.png"
                   alt=""
                   width={100}
@@ -66,7 +65,7 @@ export default function OurApproach() {
 
               <div className="grid grid-cols-2 gap-0 bg-white rounded-3xl shadow-lg">
                 <div className="relative aspect-[1.5]">
-                  <Image
+                  <img
                     src="/images/our-approach/image_4.jpg"
                     alt="Children engaged in outdoor learning activities"
                     fill
@@ -74,7 +73,7 @@ export default function OurApproach() {
                   />
                 </div>
                 <div className="relative aspect-[1.5]">
-                  <Image
+                  <img
                     src="/images/our-approach/image_5.jpg"
                     alt="Children participating in group activities"
                     fill
@@ -82,7 +81,7 @@ export default function OurApproach() {
                   />
                 </div>
                 <div className="relative aspect-[1.5]">
-                  <Image
+                  <img
                     src="/images/our-approach/image_6.jpg"
                     alt="Children playing sports"
                     fill
@@ -90,7 +89,7 @@ export default function OurApproach() {
                   />
                 </div>
                 <div className="relative aspect-[1.5]">
-                  <Image
+                  <img
                     src="/images/our-approach/image_7.jpg"
                     alt="Children in an art class"
                     fill
@@ -125,7 +124,7 @@ export default function OurApproach() {
 
       {/* Bottom Right Spiral */}
       <div className="absolute bottom-0 right-0 w-32 h-32 md:w-64 md:h-64">
-        <Image
+        <img
           src="/images/our-approach/circle.png"
           alt=""
           width={160}

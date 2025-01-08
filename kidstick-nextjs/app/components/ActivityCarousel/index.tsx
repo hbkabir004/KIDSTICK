@@ -115,7 +115,7 @@ export default function ActivitiesCarousel() {
           <SwiperSlide key={activity.id}>
           <div className={`rounded-lg overflow-hidden border-4 border-dashed ${activity.borderColor} transition-transform hover:scale-105`}>
             <div className="relative aspect-[4/3]">
-            <Image
+            <img
               src={activity.image}
               alt={activity.title}
               className="w-full h-full object-cover"

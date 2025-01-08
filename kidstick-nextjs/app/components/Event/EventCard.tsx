@@ -1,6 +1,5 @@
 import { Event } from "@/app/types/types";
 import { Clock, Star } from "lucide-react";
-import Image from "next/image";
 
 interface EventProps {
     event: Event
@@ -19,7 +18,7 @@ export default function EventCard({ event }: EventProps) {
 
             {/* Image */}
             <div className="relative h-48 w-full">
-                <Image
+                <img
                     src={event.image}
                     alt={event.title}
                     className="w-full h-full object-cover"

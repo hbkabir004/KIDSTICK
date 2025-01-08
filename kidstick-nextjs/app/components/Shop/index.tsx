@@ -1,7 +1,6 @@
 "use client"
 
 import { Product } from "@/app/types/types";
-import Image from "next/image";
 import { useEffect, useState } from 'react';
 import Heading from "../common/Heading";
 import { ProductCard } from "./ProductCard";
@@ -34,9 +33,9 @@ export default function ShopSection() {
         </div>
 
         <div className="relative">
-          <Image src="/images/products/left-side.png" alt="Left Image" className="absolute -left-64 top-0 transform -translate-y-1/2 w-32 h-32" />
+          <img src="/images/products/left-side.png" alt="Left Image" className="absolute -left-64 top-0 transform -translate-y-1/2 w-32 h-32" />
           <div className="relative">
-            <Image src="/images/products/design-rotate.png" alt="Right Image" className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-64 w-96 h-96 z-0" />
+            <img src="/images/products/design-rotate.png" alt="Right Image" className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-64 w-96 h-96 z-0" />
             <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 z-10">
               {products.map((product) => (
                 <ProductCard key={product.id} product={product} />

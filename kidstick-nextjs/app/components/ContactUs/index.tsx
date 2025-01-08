@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image'
 import { useState } from 'react'
 import Heading from '../common/Heading'
 
@@ -38,7 +37,7 @@ export default function ContactUs() {
             {/* Decorative Elements */}
             <div className="absolute top-0 left-0 w-48 h-48 z-0">
                 <div className="absolute -top-12 left-0 w-full h-full">
-                    <Image
+                    <img
                         className="absolute top-0 left-0"
                         alt="background element"
                         width={400}
@@ -49,7 +48,7 @@ export default function ContactUs() {
             </div>
             {/* Background Image */}
             <div className="absolute right-60 inset-0 flex justify-center items-center">
-                <Image
+                <img
                     src="/images/contact-us/design-rotate.png"
                     alt="Background"
                     layout="fill"
@@ -62,7 +61,7 @@ export default function ContactUs() {
                     {/* Images Column */}
                     <div className="space-y-8 hidden lg:block">
                         <div className="absolute left-36 top-10 w-[30rem] h-[19rem] rounded-3xl overflow-hidden shadow-xl z-10">
-                            <Image
+                            <img
                                 src="/images/contact-us/kid01.jpg"
                                 alt="Happy child with green paint"
                                 width={400}
@@ -72,7 +71,7 @@ export default function ContactUs() {
                         </div>
 
                         <div className="absolute w-[30rem] h-[18rem] rounded-3xl overflow-hidden shadow-xl z-10">
-                            <Image
+                            <img
                                 src="/images/contact-us/kid02.jpg"
                                 alt="Child on paddleboard"
                                 width={400}
@@ -161,7 +160,7 @@ export default function ContactUs() {
 
             {/* Pencil Decoration */}
             <div className="absolute bottom-32 right-20 hidden lg:block">
-                <Image
+                <img
                     src="/images/contact-us/pen.png"
                     alt="Decorative pencil"
                     width={120}

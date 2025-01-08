@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image'
 import { Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import Heading from '../common/Heading'
@@ -67,7 +66,7 @@ export default function GallerySection() {
                             >
                                 {galleryImages.map((image, index) => (
                                     <SwiperSlide className='mb-12' key={index}>
-                                        <Image
+                                        <img
                                             src={image.src}
                                             alt={image.alt}
                                             className="w-full h-full object-cover"

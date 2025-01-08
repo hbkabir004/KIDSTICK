@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import { FaFacebook, FaLinkedin, FaPinterest, FaTwitter } from 'react-icons/fa'
 
@@ -10,7 +9,7 @@ export default function Footer() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-32 gap-8 text-white">
                         {/* Logo and About Section */}
                         <div className="space-y-6">
-                            <Image
+                            <img
                                 src="/images/footer/logo.png"
                                 alt="KidStick Logo"
                                 width={120}
@@ -69,7 +68,7 @@ export default function Footer() {
                         {/* Contact Information */}
                         <div className="space-y-4">
                             <div className="flex items-start gap-2">
-                                <Image
+                                <img
                                     src="/images/footer/Home_Icon.png"
                                     alt="Location icon"
                                     width={20}
@@ -81,7 +80,7 @@ export default function Footer() {
                                 </p>
                             </div>
                             <div className="flex items-center gap-2">
-                                <Image
+                                <img
                                     src="/images/footer/Phone_Icon.png"
                                     alt="Phone icon"
                                     width={20}
@@ -90,7 +89,7 @@ export default function Footer() {
                                 <p className="text-sm">+8801404049797</p>
                             </div>
                             <div className="flex items-center gap-2">
-                                <Image
+                                <img
                                     src="/images/footer/Email_Icon.png"
                                     alt="Email icon"
                                     width={20}
@@ -102,7 +101,7 @@ export default function Footer() {
                             {/* Payment Methods */}
                             <div className="flex gap-2 mt-4">
                                 <div className="bg-white p-2 rounded-md w-12 h-8 flex items-center justify-center">
-                                    <Image
+                                    <img
                                         src={`/images/footer/visa.jpg`}
                                         alt={`payment method`}
                                         width={32}
@@ -110,7 +109,7 @@ export default function Footer() {
                                     />
                                 </div>
                                 <div className="bg-white p-2 rounded-md w-12 h-8 flex items-center justify-center">
-                                    <Image
+                                    <img
                                         src={`/images/footer/paypal.jpg`}
                                         alt={`payment method`}
                                         width={20}
@@ -118,7 +117,7 @@ export default function Footer() {
                                     />
                                 </div>
                                 <div className="bg-white p-2 rounded-md w-12 h-8 flex items-center justify-center">
-                                    <Image
+                                    <img
                                         src={`/images/footer/gpay.jpg`}
                                         alt={`payment method`}
                                         width={32}
@@ -126,7 +125,7 @@ export default function Footer() {
                                     />
                                 </div>
                                 <div className="bg-white p-2 rounded-md w-12 h-8 flex items-center justify-center">
-                                    <Image
+                                    <img
                                         src={`/images/footer/mastercard.jpg`}
                                         alt={`payment method`}
                                         width={32}
@@ -134,7 +133,7 @@ export default function Footer() {
                                     />
                                 </div>
                                 <div className="bg-white p-2 rounded-md w-12 h-8 flex items-center justify-center">
-                                    <Image
+                                    <img
                                         src={`/images/footer/applepay.jpg`}
                                         alt={`payment method`}
                                         width={32}
@@ -146,7 +145,7 @@ export default function Footer() {
                     </div>
 
                     <div className="relative">
-                        <Image
+                        <img
                             src="/images/footer/backpack.png"
                             alt="Backpack Icon"
                             width={60}

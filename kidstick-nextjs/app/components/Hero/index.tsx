@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import './index.css'
 
 export default function Hero() {
@@ -8,7 +7,7 @@ export default function Hero() {
                 <div className="relative min-h-[600px] overflow-hidden px-4 md:px-6 lg:px-8 z-10">
                     {/* Decorative Elements */}
                     <div className="absolute left-20 top-10 animate-bounce">
-                        <Image
+                        <img
                             src="/images/hero/planet.png"
                             alt=""
                             width={100}
@@ -19,7 +18,7 @@ export default function Hero() {
                     </div>
                     <div className="absolute right-8 top-16 animate-pulse">
                         <div className="h-16 w-16 text-yellow-400">
-                            <Image
+                            <img
                                 src="/images/hero/pulse.png"
                                 alt=""
                                 width={50}
@@ -38,7 +37,7 @@ export default function Hero() {
                             <div className="absolute right-0 top-8 animate-bounce transform -translate-x-1/2">
                                 {/* Sun */}
                                 <div className="h-32 w-32 text-yellow-400">
-                                    <Image
+                                    <img
                                         src="/images/hero/sun.png"
                                         alt=""
                                         width={100}
@@ -86,7 +85,7 @@ export default function Hero() {
                                     className="h-32 bg-repeat-x animate-move"
                                 />
                                 <div className="absolute bottom-0 left-8 z-10 w-20 animate-bounce md:w-24 hidden lg:block">
-                                    <Image
+                                    <img
                                         src="/images/hero/tiger.png"
                                         alt=""
                                         width={80}
@@ -100,7 +99,7 @@ export default function Hero() {
 
                         {/* Hero Image */}
                         <div className="absolute bottom-0 right-0 w-full max-w-2xl">
-                            <Image
+                            <img
                                 src="/images/hero/raising-hands.png"
                                 alt="Happy children with raised hands"
                                 width={1000}

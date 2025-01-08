@@ -1,7 +1,6 @@
 'use client'
 
 import { ChevronDown } from 'lucide-react'
-import Image from 'next/image'
 import { useState } from 'react'
 
 interface FAQItem {
@@ -38,7 +37,7 @@ const faqs: FAQItem[] = [
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="relative aspect-[2] rounded-lg overflow-hidden">
-                        <Image
+                        <img
                             src="/images/faq/01.jpg"
                             alt="Group of children hiking outdoors"
                             fill
@@ -46,7 +45,7 @@ const faqs: FAQItem[] = [
                         />
                     </div>
                     <div className="relative aspect-[2] rounded-lg overflow-hidden">
-                        <Image
+                        <img
                             src="/images/faq/02.jpg"
                             alt="Children in a field of flowers"
                             fill
