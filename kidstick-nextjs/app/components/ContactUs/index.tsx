@@ -51,9 +51,7 @@ export default function ContactUs() {
                 <img
                     src="/images/contact-us/design-rotate.png"
                     alt="Background"
-                    layout="fill"
-                    objectFit="scale-down"
-                    className="opacity-100"
+                    className="w-full h-full object-scale-down opacity-100"
                 />
             </div>
             <div className="container mx-auto px-4 py-16">
