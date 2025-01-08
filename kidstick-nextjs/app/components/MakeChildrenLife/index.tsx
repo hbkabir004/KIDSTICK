@@ -19,7 +19,7 @@ export default function MakeChildrenLife() {
           {/* Content Column */}
           <div className="order-1 md:order-2 text-center md:text-left">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
-              Make Your Children's<br />
+              Make Your Children&apos;s<br />
               Life Special By<br />
               Enrolling Them In<br />
               Our <span className="text-[#FF6B6B]">KidStick</span>

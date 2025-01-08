@@ -76,7 +76,7 @@ export default function Teachers() {
             bgColor='bg-[#FFE3AC]' />
           
           <p className="text-gray-400 mx-auto">
-            KidStick's teachers are dedicated professionals who foster growth, confidence, and a love for learning in every child.
+            KidStick&apos;s teachers are dedicated professionals who foster growth, confidence, and a love for learning in every child.
           </p>
         </div>
 

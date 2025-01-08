@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useState } from 'react';
+import { Autoplay, Navigation, Pagination } from 'swiper/modules';
+import { SwiperSlide as SwiperSlideType, Swiper as SwiperType } from 'swiper/react';
 import Heading from '../common/Heading';
 import TestimonialCard from './TestimonialCard';
 import './index.css';
@@ -17,8 +19,13 @@ interface Testimonial {
 
 export default function TestimonialList() {
   const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
-  // @typescript-eslint/no-explicit-any
-  const [Swiper, setSwiper] = useState<any>(null);
+  const [Swiper, setSwiper] = useState<{
+    Swiper: typeof SwiperType;
+    SwiperSlide: typeof SwiperSlideType;
+    Autoplay: typeof Autoplay;
+    Pagination: typeof Pagination;
+    Navigation: typeof Navigation;
+  } | null>(null);
 
   useEffect(() => {
     const fetchTestimonials = async () => {
