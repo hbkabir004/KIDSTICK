@@ -3,7 +3,7 @@
 import { Eye, Heart, Lock } from 'lucide-react'
 import Image from 'next/image'
 import { useState } from 'react'
-import { Product } from '../../types/product'
+import { Product } from '../../types/types'
 
 interface ProductCardProps {
   product: Product
@@ -69,9 +69,9 @@ export function ProductCard({ product }: ProductCardProps) {
       </div>
       <h3 className="text-lg font-medium mb-2 truncate">{product.title}</h3>
       <div className="flex items-center gap-2 mb-4">
-        <span className="text-lg font-bold">${product.price.toFixed(2)}</span>
+        <span className="text-lg font-bold">${product.price}</span>
         <span className="text-sm text-gray-500 line-through">
-          ${product.originalPrice.toFixed(2)}
+          ${product.originalPrice}
         </span>
       </div>
 

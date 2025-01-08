@@ -40,7 +40,7 @@ export default function TestimonialList() {
   }
 
   return (
-    <section className="relative lg:px-[15rem] md:px-[5rem] px-[3rem]">
+    <section className="relative lg:px-[15rem] md:px-[5rem] px-[3rem] md:my-32">
       <div className="absolute left-0 top-0 w-full h-full bg-no-repeat bg-left-top -z-10" style={{ backgroundImage: 'url(/images/testimonials/bg-left.png)' }}></div>
       <div className="absolute right-0 top-0 w-full h-full bg-no-repeat bg-right-bottom" style={{ backgroundImage: 'url(/images/testimonials/bg-right.png)' }}></div>
       <div className="flex flex-wrap justify-center">

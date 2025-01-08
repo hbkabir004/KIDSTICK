@@ -33,7 +33,7 @@ export default function ContactUs() {
     }
 
     return (
-        <div className="relative bg-pink-50 overflow-hidden my-[7.5rem]">
+        <div className="relative bg-pink-50 overflow-hidden my-[7.5rem] px-5 md:px-0">
             {/* Decorative Elements */}
             <div className="absolute top-0 left-0 w-48 h-48 z-0">
                 <div className="absolute -top-12 left-0 w-full h-full">

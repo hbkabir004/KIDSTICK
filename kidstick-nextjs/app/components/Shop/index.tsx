@@ -1,71 +1,22 @@
-import { Product } from "@/app/types/product"
-import { ProductCard } from "./ProductCard"
+"use client"
 
-const products: Product[] = [
-  {
-    id: '1',
-    title: 'Swimming Glass',
-    price: 20.00,
-    originalPrice: 25.00,
-    rating: 5.0,
-    reviews: 2,
-    image: 'https://i.ibb.co.com/sySwGFY/swim.jpg',
-    discount: 12
-  },
-  {
-    id: '2',
-    title: 'Binoculars',
-    price: 20.00,
-    originalPrice: 25.00,
-    rating: 5.0,
-    reviews: 2,
-    image: '/placeholder.svg?height=400&width=400',
-    discount: 12
-  },
-  {
-    id: '3',
-    title: 'Paddle Leash',
-    price: 20.00,
-    originalPrice: 25.00,
-    rating: 5.0,
-    reviews: 2,
-    image: '/placeholder.svg?height=400&width=400',
-    discount: 12
-  },
-  // Duplicate products for the grid
-  {
-    id: '4',
-    title: 'Binoculars',
-    price: 20.00,
-    originalPrice: 25.00,
-    rating: 5.0,
-    reviews: 2,
-    image: '/placeholder.svg?height=400&width=400',
-    discount: 12
-  },
-  {
-    id: '5',
-    title: 'Binoculars',
-    price: 20.00,
-    originalPrice: 25.00,
-    rating: 5.0,
-    reviews: 2,
-    image: '/placeholder.svg?height=400&width=400',
-    discount: 12
-  },
-  {
-    id: '6',
-    title: 'Paddle Leash',
-    price: 20.00,
-    originalPrice: 25.00,
-    rating: 5.0,
-    reviews: 2,
-    image: '/placeholder.svg?height=400&width=400',
-    discount: 12
-  },
-]
+import { Product } from "@/app/types/types";
+import { useEffect, useState } from 'react';
+import { ProductCard } from "./ProductCard";
 
 export default function ShopSection() {
+   const [products, setProducts] = useState<Product[]>([]);
+  
+    useEffect(() => {
+      const fetchServices = async () => {
+        const res = await fetch('https://kidstick-server.vercel.app/services');
+        const data = await res.json();
+        setProducts(data);
+      };
+  
+      fetchServices();
+    }, []);
+
   return (
     <section className="py-12 px-4 max-w-7xl mx-auto">
       <div className="text-center mb-12">

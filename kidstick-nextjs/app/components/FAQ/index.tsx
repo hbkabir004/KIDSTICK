@@ -8,7 +8,7 @@ export default function FAQSection() {
   return (
     <div className="min-h-screen relative overflow-hidden" style={{ backgroundImage: "url('/images/faq/bg-faq.png')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
 
-      <div className="container mx-auto md:px-16 px-2 py-16">
+      <div className="container mx-auto md:px-16 md:px-2 px-6 py-16">
         <div className="grid lg:grid-cols-3 gap-8">
           {/* FAQ Section */}
           <div className="lg:col-span-2 space-y-6">

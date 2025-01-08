@@ -77,7 +77,7 @@ const events: Event[] = [
 
 export default function EventSection() {
     return (
-        <section style={{ background: "url('/images/bg-event.png')", backgroundRepeat: "no-repeat" }} className="bg-cover bg-center my-32">
+        <section style={{ background: "url('/images/bg-event.png')", backgroundRepeat: "no-repeat" }} className="bg-cover bg-center my-32 overflow-hidden">
             <div className="relative w-full max-w-7xl mx-auto px-4 py-12">
                 {/* Header */}
                 <div className="text-center pb-12 pt-32">

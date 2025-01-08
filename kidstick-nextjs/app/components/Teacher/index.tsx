@@ -3,6 +3,7 @@
 import { Facebook, Linkedin, Twitter, Youtube } from 'lucide-react'
 import { Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import Heading from '../common/SectionTitle'
 import './index.css'
 
 interface Teacher {
@@ -68,10 +69,12 @@ export default function Teachers() {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12 text-[#0C1A40]">
-        <div className="text-xl leading-7 mb-5">Our Teachers</div>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            Amazing Teachers With Professional Experiences
-          </h1>
+          <div className="text-xl leading-7 mb-5">Our Teachers</div>
+          
+          <Heading
+            title='Amazing Teachers With Professional Experiences'
+            bgColor='bg-[#FFE3AC]' />
+          
           <p className="text-gray-400 max-w-3xl mx-auto">
             KidStick's teachers are dedicated professionals who foster growth, confidence, and a love for learning in every child.
           </p>
@@ -127,7 +130,7 @@ export default function Teachers() {
                 <div className="p-6 text-center">
                   <h3 className="text-xl font-semibold mb-2">{teacher.name}</h3>
                 </div>
-                  <p className="bg-[#F8F8F8] text-gray-600 text-center py-4 px-2">{teacher.role}</p>
+                <p className="bg-[#F8F8F8] text-gray-600 text-center py-4 px-2">{teacher.role}</p>
               </div>
             </SwiperSlide>
           ))}
