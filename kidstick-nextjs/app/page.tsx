@@ -7,6 +7,7 @@ import FAQSection from "./components/FAQ";
 import Footer from "./components/Footer";
 import GallerySection from "./components/Gallery";
 import Hero from "./components/Hero";
+import ImageCollage from "./components/ImageCollage";
 import JoinKidstick from "./components/JoinKidstick";
 import MakeChildrenLife from "./components/MakeChildrenLife";
 import NavBar from "./components/NavBar";
@@ -24,9 +25,8 @@ export default function Home() {
       <NavBar/>
       <Hero/>
       <ActivitiesCarousel/>
-      <imgCollage/>
+      <ImageCollage/>
       <OurApproach/>
-      {/* <StatsBanner/> */}
       <StatsSection/>
       <Services/>
       <ChoseForKids/>
