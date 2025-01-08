@@ -1,6 +1,7 @@
 "use client"
 
 import Image from 'next/image'
+import Heading from '../common/Heading'
 import PricingCard from './PricingCard'
 
 interface PricingTier {
@@ -37,8 +38,11 @@ export default function PricingSection() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-sm font-semibold text-gray-600 mb-2">Price</h2>
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Our Offer For You</h1>
-          <p className="text-gray-600 font-medium max-w-2xl mx-auto">
+          <Heading
+          title='Our Offer For You'
+          bgColor='bg-[#FFE3AC]'
+          />
+          <p className="text-gray-600 font-medium mx-auto">
             KidStick offers flexible pricing plans to fit your needs, providing quality programs and resources. Choose the best option for your child's journey with us.
           </p>
         </div>

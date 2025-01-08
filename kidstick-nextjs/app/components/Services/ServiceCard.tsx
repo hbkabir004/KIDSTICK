@@ -38,7 +38,7 @@ export function ServiceCard({ service }: ServiceCardProps) {
           <span className="text-navy-900 font-bold group-hover:text-[#49D574]">${service.currentPrice}</span>
           <span className="text-gray-400 line-through">${service.originalPrice}</span>
         </div>
-        <button className="px-4 py-2 bg-[#FF6B6B] text-white rounded-lg hover:bg-[#FF5252] transition-colors">
+        <button className="px-10 py-2 bg-[#FF6B6B] text-white rounded-md hover:bg-[#FF5252] transition-colors">
           Join Now
         </button>
       </div>

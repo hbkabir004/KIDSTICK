@@ -1,71 +1,66 @@
+import { Event } from "@/app/types/types";
 import { Clock, Star } from "lucide-react";
 
 interface EventProps {
-    date: string;
-    month: string;
-    title: string;
-    image: string;
-    rating: number;
-    reviews: number;
-    startTime: string;
-    endTime: string;
-    location: string;
-    price: number;
+    event: Event
 }
 
-export default function EventCard({ date, month, title, image, rating, reviews, startTime, endTime, location, price, }: EventProps) {
+export default function EventCard({ event }: EventProps) {
     return (
-        <div className="bg-white rounded-lg overflow-hidden shadow-md">
+        <div className="bg-white rounded-lg overflow-hidden shadow-md group">
             {/* Date Badge */}
             <div className="absolute top-4 left-4 bg-white rounded-lg p-2 shadow-lg z-10">
-                <div className="text-center">
-                    <span className="block text-lg font-bold text-gray-900">{date}</span>
-                    <span className="block text-sm text-green-500">{month}</span>
+                <div className={`${event.textColor} text-center group-hover:text-green-500`}>
+                    <span className="block text-lg font-bold">{event.date}</span>
+                    <span className="block text-sm">{event.month}</span>
                 </div>
             </div>
 
             {/* Image */}
             <div className="relative h-48 w-full">
                 <img
-                    src={image}
-                    alt={title}
+                    src={event.image}
+                    alt={event.title}
                     className="w-full h-full object-cover"
                 />
             </div>
 
             {/* Content */}
             <div className="p-4">
-                <h3 className="text-xl font-semibold mb-2">{title}</h3>
+                <h3 className="text-xl font-semibold mb-2 group-hover:text-green-500">{event.title}</h3>
 
                 {/* Rating */}
                 <div className="flex items-center mb-2">
                     {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                        <Star
+                            key={i}
+                            className="w-4 h-4 fill-red-400 text-red-400"
+                        />
                     ))}
                     <span className="ml-2 text-gray-600">
-                        {rating} ({reviews} Review)
+                        {event.rating} ({event.reviews} Review)
                     </span>
                 </div>
 
                 {/* Time */}
                 <div className="flex items-center text-gray-600 mb-2">
-                    <Clock className="w-4 h-4 mr-2" />
+                    <Clock className="w-4 h-4 mr-2 text-yellow-400" />
                     <span>
-                        {startTime} - {endTime}
+                        {event.startTime} - {event.endTime}
                     </span>
                 </div>
 
                 {/* Location */}
-                <div className="text-gray-600 mb-4">{location}</div>
+                <div className="text-gray-600 mb-4">{event.location}</div>
 
             </div>
             {/* Price and Button */}
             <div className="p-3 bg-[#F8F8F8] flex items-center justify-between">
                 <div>
-                    <span className="text-gray-600 border-r-2 pr-2 border-green-500">From</span>
-                    <span className="ml-2 text-xl font-bold">${price}</span>
+                    <span className="text-gray-600 border-r-2 pr-2 border-yellow-400">From</span>
+                    <span className="ml-2 text-xl font-bold group-hover:text-green-500">${event.price}</span>
                 </div>
-                <button className="px-4 py-2 text-sm font-medium bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors">
+                <button className={`px-4 py-2 text-sm font-semibold group-hover:text-white rounded-lg group-hover:bg-green-500 transition-colors border-2 ${event.textColor} ${event.borderColor}`}>
                     Find Out More
                 </button>
             </div>

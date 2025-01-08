@@ -9,7 +9,7 @@ export interface Product {
   discount: number;
 }
 
-export interface Service{
+export interface Service {
   id: number
   title: string
   image: string
@@ -18,5 +18,21 @@ export interface Service{
   reviews: number
   currentPrice: number
   originalPrice: number
+}
+
+export interface Event {
+  id: number;
+  date: string;
+  month: string;
+  title: string;
+  image: string;
+  rating: number;
+  reviews: number;
+  startTime: string;
+  endTime: string;
+  location: string;
+  price: number;
+  borderColor: string;
+  textColor: string;
 }
 

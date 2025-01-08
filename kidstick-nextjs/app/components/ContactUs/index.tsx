@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import { useState } from 'react'
+import Heading from '../common/Heading'
 
 interface FormData {
     name: string
@@ -93,10 +94,11 @@ export default function ContactUs() {
                     <div className="space-y-8 z-50">
                         <div>
                             <h2 className="text-sm font-semibold text-gray-600">Contact Us</h2>
-                            <h1 className="text-4xl font-bold text-navy-900 mt-2">
-                                Contact Us For Any Support
-                            </h1>
-                            {/* <div className="absolute w-[15rem] md:w-[18rem] lg:w-[30rem] inset-0 bg-[#FFE3AC] -z-10" style={{ height: '10px', top: '7.5rem', left: '51%' }}></div> */}
+                            
+                            <Heading
+                            title='Contact Us For Any Support'
+                            bgColor='bg-[#FFE3AC]'
+                            />
 
                         </div>
 

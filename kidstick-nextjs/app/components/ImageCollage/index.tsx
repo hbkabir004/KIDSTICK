@@ -28,7 +28,7 @@ export default function ImageCollage() {
     ]
   
     return (
-      <div className="w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-0">
+      <div className="w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-0 mb-32">
         {activities.map((activity, index) => (
           <div
             key={index}

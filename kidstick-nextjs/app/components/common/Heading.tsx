@@ -1,11 +1,11 @@
-interface SectionTitleProps {
+interface HeadingProps {
     title: string;
     bgColor: string;
 }
 
-export default function Heading({title, bgColor}: SectionTitleProps) {
+export default function Heading({title, bgColor}: HeadingProps) {
     return (
-        <h2 className="relative inline-block text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+        <h1 className="relative inline-block text-3xl md:text-4xl font-bold mb-6">
             <span className="relative z-10">
                 {title}
             </span>
@@ -15,6 +15,6 @@ export default function Heading({title, bgColor}: SectionTitleProps) {
                     transform: 'skew(-2deg, -0.5deg)'
                 }}
             />
-        </h2>
+        </h1>
     );
 }

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from 'react';
+import Heading from '../common/Heading';
 import TestimonialCard from './TestimonialCard';
 import './index.css';
 
@@ -44,50 +45,54 @@ export default function TestimonialList() {
       <div className="absolute left-0 top-0 w-full h-full bg-no-repeat bg-left-top -z-10" style={{ backgroundImage: 'url(/images/testimonials/bg-left.png)' }}></div>
       <div className="absolute right-0 top-0 w-full h-full bg-no-repeat bg-right-bottom" style={{ backgroundImage: 'url(/images/testimonials/bg-right.png)' }}></div>
       <div className="flex flex-wrap justify-center">
-      <div className="flex flex-col items-center max-w-full font-bold text-indigo-950 w-[1049px]">
-        <div className="text-xl leading-7">Review</div>
-        <div className="mt-5 text-3xl md:text-4xl lg:text-5xl leading-8 md:leading-9 lg:leading-10 relative w-full text-center">
-        <div className="relative z-10">Our Testimonial</div>
-        <div className="absolute w-[15rem] md:w-[18rem] lg:w-[22.5rem] inset-0 bg-[#FFE3AC]" style={{ height: '10px', top: '30px', left: '50%', transform: 'translateX(-50%)' }}></div>
+        <div className="flex flex-col items-center max-w-full font-bold text-indigo-950 w-[1049px]">
+          <div className="text-xl leading-7">Review</div>
+          <div className="mt-5 text-3xl md:text-4xl lg:text-5xl leading-8 md:leading-9 lg:leading-10 relative w-full text-center">
+
+            <Heading
+              title='Our Testimonial'
+              bgColor='bg-[#FFE3AC]'
+            />
+
+          </div>
+          <div className="self-stretch mt-6 mb-14 text-lg font-extralight leading-8 text-center text-slate-700">
+            "KidStick has been a fantastic experience for our child,
+            building confidence, coordination, and a love for physical activity.
+            The coaches are supportive and dedicated, creating an environment
+            that fosters growth. We highly recommend KidStick!"
+          </div>
         </div>
-        <div className="self-stretch mt-6 mb-14 text-lg font-extralight leading-8 text-center text-slate-700 max-md:max-w-full">
-        "KidStick has been a fantastic experience for our child,
-        building confidence, coordination, and a love for physical activity.
-        The coaches are supportive and dedicated, creating an environment
-        that fosters growth. We highly recommend KidStick!"
-        </div>
-      </div>
-      <Swiper.Swiper
-        breakpoints={{
-        576: {
-          slidesPerView: 1,
-        },
-        768: {
-          slidesPerView: 2,
-          // spaceBetween: 10
-        },
-        1300: {
-          slidesPerView: 3,
-        },
-        }}
-        modules={[Swiper.Autoplay, Swiper.Pagination, Swiper.Navigation]}
-        autoplay={{
-          delay: 2500,
-          pauseOnMouseEnter: true,
-        }}
-        pagination={{
-        clickable: true,
-        }}
-        loop={true}
-        navigation={true}
-        cssMode={true}
-      >
-        {testimonials.map((testimonial) => (
-        <Swiper.SwiperSlide key={testimonial.id}>
-          <TestimonialCard {...testimonial} />
-        </Swiper.SwiperSlide>
-        ))}
-      </Swiper.Swiper>
+        <Swiper.Swiper
+          breakpoints={{
+            576: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+              // spaceBetween: 10
+            },
+            1300: {
+              slidesPerView: 3,
+            },
+          }}
+          modules={[Swiper.Autoplay, Swiper.Pagination, Swiper.Navigation]}
+          autoplay={{
+            delay: 2500,
+            pauseOnMouseEnter: true,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          loop={true}
+          navigation={true}
+          cssMode={true}
+        >
+          {testimonials.map((testimonial) => (
+            <Swiper.SwiperSlide key={testimonial.id}>
+              <TestimonialCard {...testimonial} />
+            </Swiper.SwiperSlide>
+          ))}
+        </Swiper.Swiper>
       </div>
     </section>
   );

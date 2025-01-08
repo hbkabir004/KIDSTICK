@@ -2,6 +2,7 @@
 
 import { Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import Heading from '../common/Heading'
 import './index.css'
 
 const galleryImages = [
@@ -32,9 +33,12 @@ export default function GallerySection() {
             <div className="relative px-10 md:pr-0 md:px-4 py-12 overflow-hidden">
                 <div className="max-w-6xl mx-auto">
                     <div className="mb-8">
-                        <h2 className="text-sm text-gray-600 mb-2">Gallery</h2>
+                        <h2 className="text-sm text-gray-600 mb-2 font-semibold">Gallery</h2>
                         <div className="flex justify-between items-center">
-                            <h1 className="text-3xl md:text-4xl font-bold text-gray-900">Explore Our Gallery</h1>
+                            <Heading
+                            title='Explore Our Gallery'
+                            bgColor='bg-[#FCCDDA]'
+                            />
                             <a href="#" className="text-red-500 hover:underline">View All</a>
                         </div>
                     </div>

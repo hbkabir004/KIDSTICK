@@ -15,7 +15,7 @@ import PricingSection from "./components/Offer";
 import OurApproach from "./components/OurApproach";
 import Services from "./components/Services";
 import ShopSection from "./components/Shop";
-import StatsBanner from "./components/StatBanner";
+import StatsSection from "./components/Statistics";
 import Teachers from "./components/Teacher";
 import TestimonialList from "./components/Testimonial";
 
@@ -27,8 +27,9 @@ export default function Home() {
       <ActivitiesCarousel/>
       <ImageCollage/>
       <OurApproach/>
+      {/* <StatsBanner/> */}
+      <StatsSection/>
       <Services/>
-      <StatsBanner/>
       <ChoseForKids/>
       <EventSection/>
       <JoinKidstick/>

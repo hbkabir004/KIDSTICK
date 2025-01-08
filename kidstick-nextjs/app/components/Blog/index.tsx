@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from 'react';
+import Heading from "../common/Heading";
 import BlogCard from "./BlogCard";
 
 interface BlogPost {
@@ -40,8 +41,11 @@ export default function BlogList() {
       >
         <div className="flex justify-between items-center mb-6">
           <div>
-            <h2 className="text-sm text-gray-600 mb-2">News & Blogs</h2>
-            <h1 className="text-2xl md:text-3xl font-bold">Boost Your Children's Brain & Skills</h1>
+            <h2 className="text-sm text-gray-600 mb-2 font-semibold">News & Blogs</h2>
+            <Heading
+            title="Boost Your Children's Brain & Skills"
+            bgColor="bg-[#FCCDDA]"
+            />
           </div>
           <Link
             href="#"

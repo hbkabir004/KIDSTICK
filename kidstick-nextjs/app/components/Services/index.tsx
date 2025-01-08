@@ -2,7 +2,7 @@
 
 import { Service } from '@/app/types/types';
 import { useEffect, useState } from 'react';
-import Heading from '../common/SectionTitle';
+import Heading from '../common/Heading';
 import { ServiceCard } from './ServiceCard';
 
 export default function Services() {
@@ -20,7 +20,7 @@ export default function Services() {
 
   return (
     <section
-      className='bg-cover bg-center'
+      className='bg-cover bg-center my-32'
       style={{ backgroundImage: "url('/images/services/bg-services.png')" }}
     >
       <div className="relative w-full max-w-7xl mx-auto px-4 py-12 overflow-hidden">

@@ -3,7 +3,7 @@
 import { Facebook, Linkedin, Twitter, Youtube } from 'lucide-react'
 import { Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import Heading from '../common/SectionTitle'
+import Heading from '../common/Heading'
 import './index.css'
 
 interface Teacher {
@@ -57,7 +57,7 @@ const teachers: Teacher[] = [
 
 export default function Teachers() {
   return (
-    <section className="relative bg-[#fff8eb] min-h-screen lg:px-4 py-16 overflow-hidden px-10">
+    <section className="relative bg-[#fff8eb] min-h-screen lg:px-4 py-16 overflow-hidden px-10 my-32">
       {/* Left Background Image */}
       <div className="absolute left-32 top-1/2 transform -translate-y-1/2 hidden lg:block">
         <img src="/images/teachers/design-rotate.png" alt="Left Background" className="w-full h-auto" />
@@ -69,13 +69,13 @@ export default function Teachers() {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12 text-[#0C1A40]">
-          <div className="text-xl leading-7 mb-5">Our Teachers</div>
+          <div className="text-xl leading-7 mb-5 font-semibold">Our Teachers</div>
           
           <Heading
             title='Amazing Teachers With Professional Experiences'
             bgColor='bg-[#FFE3AC]' />
           
-          <p className="text-gray-400 max-w-3xl mx-auto">
+          <p className="text-gray-400 mx-auto">
             KidStick's teachers are dedicated professionals who foster growth, confidence, and a love for learning in every child.
           </p>
         </div>

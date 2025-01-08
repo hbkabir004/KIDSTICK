@@ -3,7 +3,7 @@ import './index.css'
 
 export default function Hero() {
     return (
-        <section style={{ backgroundImage: "url('/images/hero/rainbow.png')" }} className='bg-cover bg-center pt-0 md:pt-32'>
+        <section style={{ backgroundImage: "url('/images/hero/rainbow.png')" }} className='bg-cover bg-center pt-0'>
             <div style={{ backgroundImage: "url('/images/hero/stars.png')" }} className='bg-cover bg-center'>
             <div className="relative min-h-[600px] overflow-hidden px-4 md:px-6 lg:px-8 z-10">
                 {/* Decorative Elements */}
