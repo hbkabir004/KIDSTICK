@@ -1,6 +1,6 @@
 'use client'
 
-import { ChevronDown, Heart, Mail, Menu, Phone, Search, ShoppingBag, User } from 'lucide-react'
+import { ChevronDown, Heart, Mail, Menu, Phone, Plus, Search, ShoppingBag, User } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
@@ -8,14 +8,14 @@ import { FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import { FaInstagram } from 'react-icons/fa6'
 
 const navLinks = [
-  { href: '/', label: 'Home' },
+  { href: '/', label: 'Home', hasDropdown: true  },
   { href: '/about', label: 'About' },
   { href: '/service', label: 'Service' },
-  { href: '/pages', label: 'Pages', hasDropdown: true },
+  { href: '/pages', label: 'Pages', hasPlus: true},
   { href: '/blog', label: 'Blog' },
   { href: '/pricing', label: 'Pricing' },
   { href: '/contact', label: 'Contact' },
-  { href: '/cart', label: 'Cart(0)' }
+  { href: '/cart', label: 'Cart (0)' }
 ]
 
 export default function NavBar() {
@@ -81,6 +81,9 @@ export default function NavBar() {
                   {link.label}
                   {link.hasDropdown && (
                     <ChevronDown className="ml-1 w-4 h-4" />
+                  )}
+                  {link.hasPlus && (
+                    <Plus className="ml-1 w-4 h-4" />
                   )}
                 </Link>
               </div>

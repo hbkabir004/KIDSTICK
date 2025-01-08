@@ -103,7 +103,7 @@ export default function ContactUs() {
                         </div>
 
                         <p className="text-gray-600">
-                            We're here to help! Whether you have questions about our programs, need assistance with enrollment, or require support, the KidStick team is ready to assist. Contact us anytime, and we'll ensure you get the guidance and answers you need.
+                            We&apos;re here to help! Whether you have questions about our programs, need assistance with enrollment, or require support, the KidStick team is ready to assist. Contact us anytime, and we&apos;ll ensure you get the guidance and answers you need.
                         </p>
 
                         <form onSubmit={handleSubmit} className="space-y-4">

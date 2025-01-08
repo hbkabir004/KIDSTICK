@@ -2,35 +2,16 @@
 
 import Image from 'next/image'
 import Heading from '../common/Heading'
-import PricingCard from './PricingCard'
+import GoldCard from './GoldCard'
+import PlatinumCard from './PlatinumCard'
+import SilverCard from './SilverCard'
 
-interface PricingTier {
-  name: string
-  price: string
-  color: string
-  services: string[]
-}
+// interface PricingTier {
+//   priceTier: string[]
+// }
 
-const pricingTiers: PricingTier[] = [
-  {
-    name: "Silver",
-    price: "$29.99",
-    color: "bg-yellow-300",
-    services: ["Hiking Service", "Swimming Service", "Kayaking Service", "Soccer Service"]
-  },
-  {
-    name: "Gold",
-    price: "$29.99",
-    color: "bg-red-400",
-    services: ["Hiking Service", "Swimming Service", "Kayaking Service", "Soccer Service"]
-  },
-  {
-    name: "Platinum",
-    price: "$29.99",
-    color: "bg-cyan-300",
-    services: ["Hiking Service", "Swimming Service", "Kayaking Service", "Soccer Service"]
-  }
-]
+// const priceTier: PricingTier[] = ["", ", "", ""];
+
 
 export default function PricingSection() {
   return (
@@ -39,8 +20,8 @@ export default function PricingSection() {
         <div className="text-center mb-12">
           <h2 className="text-sm font-semibold text-gray-600 mb-2">Price</h2>
           <Heading
-          title='Our Offer For You'
-          bgColor='bg-[#FFE3AC]'
+            title='Our Offer For You'
+            bgColor='bg-[#FFE3AC]'
           />
           <p className="text-gray-600 font-medium mx-auto">
             KidStick offers flexible pricing plans to fit your needs, providing quality programs and resources. Choose the best option for your child's journey with us.
@@ -48,9 +29,9 @@ export default function PricingSection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
-          {pricingTiers.map((tier, index) => (
-            <PricingCard key={index} {...tier} />
-          ))}
+            <SilverCard />
+            <GoldCard/>
+            <PlatinumCard/>
         </div>
 
         <Image
