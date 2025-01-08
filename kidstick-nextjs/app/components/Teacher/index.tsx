@@ -57,7 +57,7 @@ const teachers: Teacher[] = [
 
 export default function Teachers() {
   return (
-    <section className="relative bg-[#fff8eb] min-h-screen lg:px-4 py-16 overflow-hidden px-10 my-32">
+    <section className="relative min-h-screen lg:px-4 py-16 overflow-hidden px-10 my-32">
       {/* Left Background Image */}
       <div className="absolute left-32 top-1/2 transform -translate-y-1/2 hidden lg:block">
         <img src="/images/teachers/design-rotate.png" alt="Left Background" className="w-full h-auto" />
