@@ -14,14 +14,14 @@ interface ProductCardProps {
   imageUrl: string
 }
 
-export default function ProductCard({
-  title = "Swimming Glass",
-  currentPrice = 20.00,
-  originalPrice = 25.00,
-  discount = 12,
-  rating = 5.0,
-  reviews = 2,
-  imageUrl = "/placeholder.svg?height=300&width=300"
+export default function ProductCard02({
+  title,
+  currentPrice,
+  originalPrice,
+  discount,
+  rating,
+  reviews,
+  imageUrl,
 }: ProductCardProps) {
   const [quantity, setQuantity] = useState(1)
 
