@@ -16,14 +16,13 @@ export default function BlogCard({
       <Link href="#" className="flex flex-col md:flex-row gap-4">
         {/* Image Container */}
         <div className="relative w-full md:w-[12.5rem] h-[15.625rem] flex-shrink-0">
-          <div className="relative h-full rounded-tl-[24px] md:rounded-l-[24px] overflow-hidden">
+            <div className="relative h-full rounded-tl-[24px] md:rounded-l-[24px] overflow-hidden">
             <img
               src={img}
               alt={title}
-              fill
-              className="object-cover"
+              className="object-cover w-full h-full"
             />
-          </div>
+            </div>
           
           {/* Date Badge */}
           <div className="absolute top-3 left-3">
