@@ -56,10 +56,10 @@ export default function TestimonialList() {
 
           </div>
           <div className="self-stretch mt-6 mb-14 text-lg font-extralight leading-8 text-center text-slate-700">
-            "KidStick has been a fantastic experience for our child,
+            &quot;KidStick has been a fantastic experience for our child,
             building confidence, coordination, and a love for physical activity.
             The coaches are supportive and dedicated, creating an environment
-            that fosters growth. We highly recommend KidStick!"
+            that fosters growth. We highly recommend KidStick!&quot;
           </div>
         </div>
         <Swiper.Swiper

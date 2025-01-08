@@ -24,7 +24,7 @@ export default function PricingSection() {
             bgColor='bg-[#FFE3AC]'
           />
           <p className="text-gray-600 font-medium mx-auto">
-            KidStick offers flexible pricing plans to fit your needs, providing quality programs and resources. Choose the best option for your child's journey with us.
+            KidStick offers flexible pricing plans to fit your needs, providing quality programs and resources. Choose the best option for your child&apos;s journey with us.
           </p>
         </div>
 
