@@ -1,6 +1,7 @@
 'use client'
 
 import { Facebook, Linkedin, Twitter, Youtube } from 'lucide-react'
+import Image from 'next/image'
 import { Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import Heading from '../common/Heading'
@@ -60,11 +61,11 @@ export default function Teachers() {
     <section className="relative min-h-screen lg:px-4 py-16 overflow-hidden px-10 my-32">
       {/* Left Background Image */}
       <div className="absolute left-32 top-1/2 transform -translate-y-1/2 hidden lg:block">
-        <img src="/images/teachers/design-rotate.png" alt="Left Background" className="w-full h-auto" />
+        <Image src="/images/teachers/design-rotate.png" alt="Left Background" className="w-full h-auto" />
       </div>
       {/* Right Background Image */}
       <div className="absolute right-64 bottom-[30rem] transform hidden lg:block">
-        <img src="/images/teachers/oval.png" alt="Right Background" className="w-[15rem] h-auto" />
+        <Image src="/images/teachers/oval.png" alt="Right Background" className="w-[15rem] h-auto" />
       </div>
       <div className="max-w-6xl mx-auto">
         {/* Header */}
@@ -107,7 +108,7 @@ export default function Teachers() {
             <SwiperSlide key={teacher.id}>
               <div className="bg-white rounded-lg overflow-hidden group">
                 <div className="relative">
-                  <img
+                  <Image
                     src={teacher.image}
                     alt={teacher.name}
                     className="w-full h-80 object-cover"

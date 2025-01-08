@@ -34,7 +34,7 @@ const faqs: FAQItem[] = [
                 <p className="text-sm text-gray-600">
                     KidStick tracks progress with regular assessments on skills like coordination and
                     agility, providing individualized feedback and progress reports to highlight each
-                    child's development.
+                    child&apos;s development.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="relative aspect-[2] rounded-lg overflow-hidden">

@@ -1,5 +1,6 @@
 import { Service } from '@/app/types/types'
 import { Star } from 'lucide-react'
+import Image from 'next/image'
 
 interface ServiceCardProps {
   service: Service
@@ -9,7 +10,7 @@ export function ServiceCard({ service }: ServiceCardProps) {
   return (
     <div className="relative bg-[#FCEEEE] rounded-lg p-4 border-2 border-dashed border-[#5BA8FD] hover:border-[#49D574] transition-transform hover:scale-105 hover:border-3/4 group">
       <div className="aspect-video mb-4 overflow-hidden rounded-lg">
-        <img
+        <Image
           src={service.image}
           alt={service.title}
           className="w-full h-full object-cover"

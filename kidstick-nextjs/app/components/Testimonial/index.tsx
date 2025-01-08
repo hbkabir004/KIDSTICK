@@ -17,6 +17,7 @@ interface Testimonial {
 
 export default function TestimonialList() {
   const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
+  // @typescript-eslint/no-explicit-any
   const [Swiper, setSwiper] = useState<any>(null);
 
   useEffect(() => {

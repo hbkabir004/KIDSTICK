@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function MakeChildrenLife() {
   return (
     <section 
@@ -8,7 +10,7 @@ export default function MakeChildrenLife() {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* Image Column */}
           <div className="order-2 md:order-1">
-            <img
+            <Image
               src="/images/make-children/girl.png"
               alt="Happy child in colorful clothes"
               className="w-full rounded-lg"

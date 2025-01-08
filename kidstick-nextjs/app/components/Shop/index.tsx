@@ -1,6 +1,7 @@
 "use client"
 
 import { Product } from "@/app/types/types";
+import Image from "next/image";
 import { useEffect, useState } from 'react';
 import Heading from "../common/Heading";
 import { ProductCard } from "./ProductCard";
@@ -28,14 +29,14 @@ export default function ShopSection() {
             bgColor="bg-[#FFE3AC]"
           />
           <p className="text-gray-600 mx-auto">
-            Visit our KidStick Shop for high-quality gear and essentials. Find apparel, equipment, and accessories designed to support your child's journey and enhance their experience with KidStick.
+            Visit our KidStick Shop for high-quality gear and essentials. Find apparel, equipment, and accessories designed to support your child&apos;s journey and enhance their experience with KidStick.
           </p>
         </div>
 
         <div className="relative">
-          <img src="/images/products/left-side.png" alt="Left Image" className="absolute -left-64 top-0 transform -translate-y-1/2 w-32 h-32" />
+          <Image src="/images/products/left-side.png" alt="Left Image" className="absolute -left-64 top-0 transform -translate-y-1/2 w-32 h-32" />
           <div className="relative">
-            <img src="/images/products/design-rotate.png" alt="Right Image" className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-64 w-96 h-96 z-0" />
+            <Image src="/images/products/design-rotate.png" alt="Right Image" className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-64 w-96 h-96 z-0" />
             <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 z-10">
               {products.map((product) => (
                 <ProductCard key={product.id} product={product} />

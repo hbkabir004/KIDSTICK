@@ -1,6 +1,7 @@
 'use client'
 
 import { Star } from 'lucide-react'
+import Image from 'next/image'
 
 export default function JoinKidstick() {
     return (
@@ -8,7 +9,7 @@ export default function JoinKidstick() {
             {/* Left Panel - Image Section */}
             <div className="relative w-full lg:w-1/2 min-h-[300px] lg:min-h-[600px]">
                 <div className="absolute inset-0">
-                    <img
+                    <Image
                         src="/images/join-kidstick/smilingkids.png"
                         alt="Children enjoying activities"
                         className="w-full h-full object-cover"
@@ -69,7 +70,7 @@ export default function JoinKidstick() {
 
             {/* Green Wave Decoration */}
             <div className="absolute bottom-0 left-0 w-full h-12 z-10">
-                <img
+                <Image
                     src="/images/join-kidstick/grass.png"
                     alt="Decoration"
                     className="w-full h-full object-fill"
@@ -78,7 +79,7 @@ export default function JoinKidstick() {
 
             {/* Colorful Star */}
             <div className="absolute bottom-2 left-0 w-28 h-32 z-0 hidden lg:block">
-                <img
+                <Image
                     src="/images/join-kidstick/color-start.png"
                     alt="Decoration"
                     className="w-full h-full object-fill"

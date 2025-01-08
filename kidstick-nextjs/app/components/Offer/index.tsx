@@ -6,13 +6,6 @@ import GoldCard from './GoldCard'
 import PlatinumCard from './PlatinumCard'
 import SilverCard from './SilverCard'
 
-// interface PricingTier {
-//   priceTier: string[]
-// }
-
-// const priceTier: PricingTier[] = ["", ", "", ""];
-
-
 export default function PricingSection() {
   return (
     <section className="w-full bg-[#FFA8A0] px-4 py-16 relative overflow-hidden">
