@@ -1,32 +1,62 @@
 [
   {
     "id": "1",
-    "name": "Swimming Glass....",
-    "img": "https://i.ibb.co.com/sySwGFY/swim.jpg"
+    "title": "Swimming Glass",
+    "price": 20.00,
+    "originalPrice": 25.00,
+    "rating": 5.0,
+    "reviews": 2,
+    "image": "https://i.ibb.co.com/sySwGFY/swim.jpg",
+    "discount": 12
   },
   {
     "id": "2",
-    "name": "Binoculars....",
-    "img": "https://i.ibb.co.com/jVMndGP/binocular.jpg"
+    "title": "Binoculars",
+    "price": 20.00,
+    "originalPrice": 25.00,
+    "rating": 5.0,
+    "reviews": 2,
+    "image": "https://i.ibb.co.com/jVMndGP/binocular.jpg",
+    "discount": 12
   },
   {
     "id": "3",
-    "name": "Paddle Leash....",
-    "img": "https://i.ibb.co.com/1b2Lz0G/palm.jpg"
+    "title": "Paddle Leash",
+    "price": 20.00,
+    "originalPrice": 25.00,
+    "rating": 5.0,
+    "reviews": 2,
+    "image": "https://i.ibb.co.com/1b2Lz0G/palm.jpg",
+    "discount": 12
   },
   {
     "id": "4",
-    "name": "Binoculars....",
-    "img": "https://i.ibb.co.com/jVMndGP/binocular.jpg"
+    "title": "Binoculars",
+    "price": 20.00,
+    "originalPrice": 25.00,
+    "rating": 5.0,
+    "reviews": 2,
+    "image": "https://i.ibb.co.com/jVMndGP/binocular.jpg",
+    "discount": 12
   },
   {
     "id": "5",
-    "name": "Binoculars....",
-    "img": "https://i.ibb.co.com/jVMndGP/binocular.jpg"
+    "title": "Binoculars",
+    "price": 20.00,
+    "originalPrice": 25.00,
+    "rating": 5.0,
+    "reviews": 2,
+    "image": "https://i.ibb.co.com/jVMndGP/binocular.jpg",
+    "discount": 12
   },
   {
     "id": "6",
-    "name": "Paddle Leash....",
-    "img": "https://i.ibb.co.com/1b2Lz0G/palm.jpg"
+    "title": "Paddle Leash",
+    "price": 20.00,
+    "originalPrice": 25.00,
+    "rating": 5.0,
+    "reviews": 2,
+    "image": "https://i.ibb.co.com/1b2Lz0G/palm.jpg",
+    "discount": 12
   }
 ]

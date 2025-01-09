@@ -1,41 +1,62 @@
 [
   {
-    "id": "1",
-    "name": "Join Hiking",
-    "img": "https://i.ibb.co.com/ysXsFG8/hiking.jpg",
-    "description": "Get KidStick's Hiking Package for a guided adventure fostering fun and growth."
-    
+    "id": 1,
+    "title": "Join Hiking",
+    "image": "https://i.ibb.co.com/ysXsFG8/hiking.jpg",
+    "description": "Get KidStick's Hiking Package for a guided adventure fostering fun and growth.",
+    "rating": 5.0,
+    "reviews": 2,
+    "currentPrice": 110,
+    "originalPrice": 120
   },
   {
-    "id": "2",
-    "name": "Join Swimming",
-    "img": "https://i.ibb.co.com/35xVq43/swimming.jpg",
-    "description": "Get KidStick's Swimming Package for a safe, skill-building aquatic experience."
-
+    "id": 2,
+    "title": "Join Swimming",
+    "image": "https://i.ibb.co.com/35xVq43/swimming.jpg",
+    "description": "Get KidStick's Swimming Package for a safe, skill-building aquatic experience.",
+    "rating": 5.0,
+    "reviews": 2,
+    "currentPrice": 110,
+    "originalPrice": 120
   },
   {
-    "id": "3",
-    "name": "Join Soccer",
-    "img": "https://i.ibb.co.com/3WKbwm0/soccer.jpg",
-    "description": "Unlock skills and confidence with KidStick's Soccer Package."
-
+    "id": 3,
+    "title": "Join Soccer",
+    "image": "https://i.ibb.co.com/3WKbwm0/soccer.jpg",
+    "description": "Unlock skills and confidence with KidStick's Soccer Package.",
+    "rating": 5.0,
+    "reviews": 2,
+    "currentPrice": 110,
+    "originalPrice": 120
   },
   {
-    "id": "4",
-    "name": "Join Arts",
-    "img": "https://i.ibb.co.com/tCL5q68/arts.jpg",
-    "description": "Inspire creativity with KidStick's Arts Package."
-
+    "id": 4,
+    "title": "Join Arts",
+    "image": "https://i.ibb.co.com/tCL5q68/arts.jpg",
+    "description": "Inspire creativity with KidStick's Arts Package.",
+    "rating": 5.0,
+    "reviews": 2,
+    "currentPrice": 110,
+    "originalPrice": 120
   },
   {
-    "id": "5",
-    "name": "Join Music",
-    "img": "https://i.ibb.co.com/4g7DKmw/music.jpg",
-    "description": "Foster creativity with KidStick's Music Package"
-
+    "id": 5,
+    "title": "Join Music",
+    "image": "https://i.ibb.co.com/4g7DKmw/music.jpg",
+    "description": "Foster creativity with KidStick's Music Package.",
+    "rating": 5.0,
+    "reviews": 2,
+    "currentPrice": 110,
+    "originalPrice": 120
+  },
+  {
+    "id": 6,
+    "title": "Join Swimming",
+    "image": "https://i.ibb.co.com/35xVq43/swimming.jpg",
+    "description": "Get KidStick's Swimming Package for a safe, skill-building aquatic experience.",
+    "rating": 5.0,
+    "reviews": 2,
+    "currentPrice": 110,
+    "originalPrice": 120
   }
-  
 ]
-
-
-

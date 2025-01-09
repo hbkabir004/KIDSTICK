@@ -1,27 +1,77 @@
 [
   {
-    "id": "1",
+    "id": 1,
+    "date": "14",
+    "month": "May",
     "title": "Adventure camping",
-    "img": "https://i.ibb.co.com/G0Bj1VX/e1.jpg"
+    "image": "https://i.ibb.co.com/G0Bj1VX/e1.jpg",
+    "rating": 5.0,
+    "reviews": 2,
+    "startTime": "8:00 am",
+    "endTime": "5:00 pm",
+    "location": "San Diego, California",
+    "price": 90,
+    "borderColor": "border-[#49D574]",
+    "textColor": "text-[#49D574]"
   },
   {
-    "id": "2",
+    "id": 2,
+    "date": "14",
+    "month": "May",
     "title": "Enjoy Kayaking",
-    "img": "https://i.ibb.co.com/GMy84Tx/e2.jpg"
+    "image": "https://i.ibb.co.com/GMy84Tx/e2.jpg",
+    "rating": 5.0,
+    "reviews": 2,
+    "startTime": "8:00 am",
+    "endTime": "5:00 pm",
+    "location": "San Diego, California",
+    "price": 90,
+    "borderColor": "border-[#FDB157]",
+    "textColor": "text-[#FDB157]"
   },
   {
-    "id": "3",
+    "id": 3,
+    "date": "14",
+    "month": "May",
     "title": "Adventure camping",
-    "img": "https://i.ibb.co.com/Db2S3gJ/e3.jpg"
+    "image": "https://i.ibb.co.com/Db2S3gJ/e3.jpg",
+    "rating": 5.0,
+    "reviews": 2,
+    "startTime": "8:00 am",
+    "endTime": "5:00 pm",
+    "location": "San Diego, California",
+    "price": 90,
+    "borderColor": "border-[#FF6B6D]",
+    "textColor": "text-[#FF6B6D]"
   },
   {
-    "id": "4",
+    "id": 4,
+    "date": "14",
+    "month": "May",
+    "title": "Adventure camping",
+    "image": "https://i.ibb.co.com/G0Bj1VX/e1.jpg",
+    "rating": 5.0,
+    "reviews": 2,
+    "startTime": "8:00 am",
+    "endTime": "5:00 pm",
+    "location": "San Diego, California",
+    "price": 90,
+    "borderColor": "border-[#49D574]",
+    "textColor": "text-[#49D574]"
+  },
+  {
+    "id": 5,
+    "date": "14",
+    "month": "May",
     "title": "Enjoy Kayaking",
-    "img": "https://i.ibb.co.com/GMy84Tx/e2.jpg"
-  },
-  {
-    "id": "5",
-    "title": "Adventure camping",
-    "img": "https://i.ibb.co.com/Db2S3gJ/e1.jpg"
+    "image": "https://i.ibb.co.com/GMy84Tx/e2.jpg",
+    "rating": 5.0,
+    "reviews": 2,
+    "startTime": "8:00 am",
+    "endTime": "5:00 pm",
+    "location": "San Diego, California",
+    "price": 90,
+    "borderColor": "border-[#FDB157]",
+    "textColor": "text-[#FDB157]"
   }
 ]
