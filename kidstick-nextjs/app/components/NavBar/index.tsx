@@ -14,7 +14,7 @@ const navLinks = [
   { href: '/blog', label: 'Blog' },
   { href: '/pricing', label: 'Pricing' },
   { href: '/contact', label: 'Contact' },
-  { href: '/cart', label: 'Cart (0)' }
+  { href: '/cart', label: 'Cart (0)' },
 ]
 
 export default function NavBar() {
@@ -153,4 +153,3 @@ export default function NavBar() {
     </header>
   )
 }
-

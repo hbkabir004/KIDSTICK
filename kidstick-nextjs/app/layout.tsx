@@ -7,6 +7,8 @@ import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/thumbs';
+import Footer from "./components/Footer";
+import NavBar from "./components/NavBar";
 
 export const metadata: Metadata = {
   title: "Kidstick Web App",
@@ -26,7 +28,11 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
       </head>
       <body className="antialiased">
-        {children}
+        <NavBar />
+        <main>
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );
