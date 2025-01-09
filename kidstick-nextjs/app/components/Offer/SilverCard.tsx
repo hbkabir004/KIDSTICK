@@ -43,7 +43,7 @@ export default function SilverCard() {
                 </div>
 
                 <div className="">
-                    <div className="absolute -bottom-4 left-[8.3rem] bg-white text-lg text-gray-800 rounded-full md:px-7 px-8 py-2 font-semibold z-10">
+                    <div className="absolute -bottom-4 md:left-[8.3rem] left-[7rem] bg-white text-lg text-gray-800 rounded-full md:px-7 px-8 py-2 font-semibold z-10">
                         Silver
                     </div>
                 </div>

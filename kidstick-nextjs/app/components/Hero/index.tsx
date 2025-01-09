@@ -110,7 +110,7 @@ export default function Hero() {
                     </div>
                 </div>
                 {/* Background Grass Image */}
-                <div className="absolute lg:bottom-[7rem] left-0 right-0 h-64 bg-fill bg-bottom -z-0" style={{ backgroundImage: "url('/images/hero/bg-grass.png')" }} />
+                <div className="absolute lg:bottom-[12rem] lg:block md:hidden left-0 right-0 h-64 bg-fill bg-bottom -z-0" style={{ backgroundImage: "url('/images/hero/bg-grass.png')" }} />
             </div>
         </section>
     )
