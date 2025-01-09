@@ -1,14 +1,8 @@
 'use client'
 
+import { FormData } from '@/app/types/types'
 import { useState } from 'react'
 import Heading from '../common/Heading'
-
-interface FormData {
-    name: string
-    email: string
-    phone: string
-    message: string
-}
 
 export default function ContactUs() {
     const [formData, setFormData] = useState<FormData>({

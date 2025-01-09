@@ -144,7 +144,7 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    <div className="relative">
+                    <div className="relative hidden lg:block">
                         <img
                             src="/images/footer/backpack.png"
                             alt="Backpack Icon"

@@ -1,13 +1,8 @@
 'use client'
 
+import { FAQItem } from '@/app/types/types'
 import { ChevronDown } from 'lucide-react'
 import { useState } from 'react'
-
-interface FAQItem {
-    id: string
-    question: string
-    answer: string | React.ReactNode
-}
 
 const faqs: FAQItem[] = [
     {

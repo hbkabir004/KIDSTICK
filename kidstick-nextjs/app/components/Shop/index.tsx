@@ -19,7 +19,7 @@ export default function ShopSection() {
   }, []);
 
   return (
-    <section className="bg-[#fcf7ee]">
+    <section className="bg-[#fcf7ee] overflow-hidden">
       <div className="py-12 px-4 max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-gray-600 font-semibold mb-5 text-lg">Shop</h2>

@@ -1,16 +1,10 @@
 "use client";
 
+import { BlogPost } from "@/app/types/types";
 import Link from "next/link";
 import { useEffect, useState } from 'react';
 import Heading from "../common/Heading";
 import BlogCard from "./BlogCard";
-
-interface BlogPost {
-  id: number;
-  title: string;
-  description: string;
-  img: string;
-}
 
 export default function BlogList() {
   const [blogPosts, setBlogPosts] = useState<BlogPost[]>([]);
@@ -59,7 +53,7 @@ export default function BlogList() {
           {blogPosts.map((post) => (
             <BlogCard
               key={post.id}
-              {...post}
+              post={post}
             />
           ))}
         </div>

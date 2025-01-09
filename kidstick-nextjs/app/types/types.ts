@@ -36,3 +36,41 @@ export interface Event {
   textColor: string;
 }
 
+export interface BlogPost {
+  id: number;
+  title: string;
+  description: string;
+  img: string;
+}
+
+export interface FormData {
+  name: string
+  email: string
+  phone: string
+  message: string
+}
+
+export interface Teacher {
+  id: number
+  name: string
+  role: string
+  image: string
+  showSocial?: boolean
+}
+
+export interface FAQItem {
+  id: string
+  question: string
+  answer: string | React.ReactNode
+}
+
+export interface Testimonial {
+  id: number;
+  name: string;
+  quote: string;
+  rating: number;
+  imageSrc: string;
+  border: string;
+  color: string;
+}
+

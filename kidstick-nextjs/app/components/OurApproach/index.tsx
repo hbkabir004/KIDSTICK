@@ -23,7 +23,7 @@ export default function OurApproach() {
           aria-hidden="true"
         />
       </div>
-      
+
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-12 md:py-20">

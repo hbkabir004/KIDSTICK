@@ -21,8 +21,7 @@ const galleryImages = [
     {
         src: '/images/our-gallery/02.jpg',
         alt: 'Child swimming',
-    },
-    // Add more images as needed
+    }
 ]
 
 export default function GallerySection() {

@@ -1,21 +1,12 @@
 "use client";
 
+import { Testimonial } from '@/app/types/types';
 import { useEffect, useState } from 'react';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import { SwiperSlide as SwiperSlideType, Swiper as SwiperType } from 'swiper/react';
 import Heading from '../common/Heading';
 import TestimonialCard from './TestimonialCard';
 import './index.css';
-
-interface Testimonial {
-  id: number;
-  name: string;
-  quote: string;
-  rating: number;
-  imageSrc: string;
-  border: string;
-  color: string;
-}
 
 export default function TestimonialList() {
   const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
@@ -72,15 +63,19 @@ export default function TestimonialList() {
         </div>
         <Swiper.Swiper
           breakpoints={{
-            576: {
+            640: {
               slidesPerView: 1,
             },
             768: {
-              slidesPerView: 2,
-              // spaceBetween: 10
+              slidesPerView: 1,
             },
-            1300: {
+            1024: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            1280: {
               slidesPerView: 3,
+              spaceBetween: 30,
             },
           }}
           modules={[Swiper.Autoplay, Swiper.Pagination, Swiper.Navigation]}
@@ -97,7 +92,7 @@ export default function TestimonialList() {
         >
           {testimonials.map((testimonial) => (
             <Swiper.SwiperSlide key={testimonial.id}>
-              <TestimonialCard {...testimonial} />
+              <TestimonialCard testimonial={testimonial} />
             </Swiper.SwiperSlide>
           ))}
         </Swiper.Swiper>

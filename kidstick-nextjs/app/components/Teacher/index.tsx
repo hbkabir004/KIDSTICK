@@ -1,18 +1,12 @@
 'use client'
 
+import { Teacher } from '@/app/types/types'
 import { Facebook, Linkedin, Twitter, Youtube } from 'lucide-react'
 import { Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import Heading from '../common/Heading'
 import './index.css'
 
-interface Teacher {
-  id: number
-  name: string
-  role: string
-  image: string
-  showSocial?: boolean
-}
 
 const teachers: Teacher[] = [
   {
@@ -57,7 +51,7 @@ const teachers: Teacher[] = [
 
 export default function Teachers() {
   return (
-    <section className="relative min-h-screen lg:px-4 py-16 overflow-hidden px-10 my-32">
+    <section className="bg-[#fff8eb] relative min-h-screen lg:px-4 py-16 overflow-hidden px-10 my-32">
       {/* Left Background Image */}
       <div className="absolute left-32 top-1/2 transform -translate-y-1/2 hidden lg:block">
         <img src="/images/teachers/design-rotate.png" alt="Left Background" className="w-full h-auto" />
@@ -110,7 +104,7 @@ export default function Teachers() {
                   <img
                     src={teacher.image}
                     alt={teacher.name}
-                    className="w-full h-80 object-cover"
+                    className="w-full h-80 object-cove"
                   />
                   <div className="absolute right-4 top-4 flex flex-col gap-2 bg-green-400 p-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <a href="#" className="text-white hover:text-[#FF6B6D]">
