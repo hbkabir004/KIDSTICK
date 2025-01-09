@@ -9,7 +9,7 @@ export default function ComingSoon() {
           Coming Soon
         </h1>
         <p className="text-xl md:text-2xl mb-8 bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500">
-          We're working hard to bring you something amazing!
+          We&apos;re working hard to bring you something amazing!
         </p>
         
         <div className="mt-12">
