@@ -1,6 +1,6 @@
 "use client"
 
-import { Product } from "@/app/types/types";
+import { Product } from "@/src/types/types";
 import { useEffect, useState } from 'react';
 import Heading from "../common/Heading";
 import { ProductCard } from "./ProductCard";

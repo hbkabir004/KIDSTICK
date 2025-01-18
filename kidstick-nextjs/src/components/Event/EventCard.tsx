@@ -1,4 +1,5 @@
-import { Event } from "@/app/types/types";
+
+import { Event } from "@/src/types/types";
 import { Clock, Star } from "lucide-react";
 
 interface EventProps {
