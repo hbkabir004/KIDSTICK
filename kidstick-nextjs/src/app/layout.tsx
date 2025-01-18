@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "../globals.css";
 
 // Importing Swiper Styles
 import 'swiper/css';
@@ -7,8 +7,8 @@ import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/thumbs';
-import Footer from "./components/Footer";
-import NavBar from "./components/NavBar";
+import Footer from "../components/Footer";
+import NavBar from "../components/NavBar";
 
 export const metadata: Metadata = {
   title: "Kidstick Web App",
