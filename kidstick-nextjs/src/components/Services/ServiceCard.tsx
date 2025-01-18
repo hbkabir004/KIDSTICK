@@ -1,4 +1,4 @@
-import { Service } from '@/app/types/types'
+import { Service } from '@/src/types/types'
 import { Star } from 'lucide-react'
 
 interface ServiceCardProps {

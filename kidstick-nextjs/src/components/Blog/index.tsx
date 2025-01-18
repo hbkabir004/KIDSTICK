@@ -1,6 +1,7 @@
 "use client";
 
-import { BlogPost } from "@/app/types/types";
+
+import { BlogPost } from "@/src/types/types";
 import Link from "next/link";
 import { useEffect, useState } from 'react';
 import Heading from "../common/Heading";

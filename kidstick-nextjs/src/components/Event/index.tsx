@@ -2,7 +2,7 @@
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import { Event } from '@/app/types/types';
+import { Event } from '@/src/types/types';
 import { useEffect, useState } from 'react';
 import { Pagination } from 'swiper/modules';
 import Heading from '../common/Heading';

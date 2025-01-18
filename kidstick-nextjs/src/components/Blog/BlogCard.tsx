@@ -1,4 +1,5 @@
-import { BlogPost } from '@/app/types/types'
+
+import { BlogPost } from '@/src/types/types'
 import Link from 'next/link'
 
 interface BlogCardProps {

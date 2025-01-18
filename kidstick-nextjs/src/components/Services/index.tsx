@@ -1,6 +1,6 @@
 "use client"
 
-import { Service } from '@/app/types/types';
+import { Service } from '@/src/types/types';
 import { useEffect, useState } from 'react';
 import Heading from '../common/Heading';
 import { ServiceCard } from './ServiceCard';

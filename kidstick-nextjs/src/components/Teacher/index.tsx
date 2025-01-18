@@ -1,6 +1,6 @@
 'use client'
 
-import { Teacher } from '@/app/types/types'
+import { Teacher } from '@/src/types/types'
 import { Facebook, Linkedin, Twitter, Youtube } from 'lucide-react'
 import { Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'

@@ -1,6 +1,6 @@
 'use client'
 
-import { FormData } from '@/app/types/types'
+import { FormData } from '@/src/types/types'
 import { useState } from 'react'
 import Heading from '../common/Heading'
 

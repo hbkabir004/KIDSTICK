@@ -1,6 +1,6 @@
 'use client'
 
-import { FAQItem } from '@/app/types/types'
+import { FAQItem } from '@/src/types/types'
 import { ChevronDown } from 'lucide-react'
 import { useState } from 'react'
 

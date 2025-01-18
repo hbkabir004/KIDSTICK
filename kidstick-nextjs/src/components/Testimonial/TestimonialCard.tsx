@@ -1,4 +1,4 @@
-import { Testimonial } from '@/app/types/types';
+import { Testimonial } from '@/src/types/types';
 import { Star } from 'lucide-react';
 
 interface TestimonialCardProps {

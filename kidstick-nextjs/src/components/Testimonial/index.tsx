@@ -1,6 +1,6 @@
 "use client";
 
-import { Testimonial } from '@/app/types/types';
+import { Testimonial } from '@/src/types/types';
 import { useEffect, useState } from 'react';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import { SwiperSlide as SwiperSlideType, Swiper as SwiperType } from 'swiper/react';
